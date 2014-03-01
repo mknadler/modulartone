@@ -25,3 +25,29 @@ Bourbon have a clearfix in bourbon/addons. just use @include clearfix;
 
 **/
 
+aside {
+    transition: width 1s ease-in-out;
+}
+
+section {
+    transition: width 1s ease-in-out;
+}
+
+// Hacky shit
+.octave {
+    aside {
+        width: 33.33%;
+    }
+    section {
+        width: 66.66%;
+    }
+}
+
+.fifth {
+    aside {
+        width: 40%;
+    }
+    section {
+        width: 60%;
+    }
+}
