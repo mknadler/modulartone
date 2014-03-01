@@ -12,7 +12,7 @@ body {
 
 aside {
   height: 100%;
-  width: 20%;
+  width: 28.57143%;
   background: #666;
   float: left;
   position: relative;
@@ -24,10 +24,25 @@ aside {
 
 section {
   background: #222;
-  width: 80%;
+  width: 71.42857%;
   height: 100%;
   float: left;
-  position: relative; }
+  position: relative;
+  text-align: center; }
+  section:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+
+.triangle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 140px solid #FFF; }
 
 /** Notes
 
