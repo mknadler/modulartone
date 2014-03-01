@@ -2,7 +2,7 @@ aside {
 	height: 100%;
 	float: left;
 	position: relative;
-	overflow: auto;
+	overflow: hidden;
 	transition: width 1s ease-in-out;
 	a {
 		@include center-parent;
@@ -11,6 +11,7 @@ aside {
 		color: $color-aside-font;
 		background: $color-aside-background;
 		text-transform: uppercase;
+		margin-right: -15px;
 		&:hover {
 			background: shade($color-aside-background, 15%);
 		}
@@ -39,21 +40,12 @@ header {
 	}
 }
 
-aside::-webkit-scrollbar {
-	display: none;
-}
-
-aside {
-	overflow: hidden;
-}
+// Not the most semantic, but it's a way to hide the scrollbar
+// in combination with the negative margin on the <a>s
+// and the 
 .scroll {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
 	padding-right: 20px;
-}
-aside {
-	a {
-		margin-right: -15px;
-	}
 }
