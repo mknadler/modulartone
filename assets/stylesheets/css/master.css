@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'quicksandbold';
+  src: url("/assets/fonts/quicksand-bold-webfont.eot");
+  src: url("/assets/fonts/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/quicksand-bold-webfont.woff") format("woff"), url("/assets/fonts/quicksand-bold-webfont.ttf") format("truetype"), url("/assets/fonts/quicksand-bold-webfont.svg#quicksandbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'quicksandregular';
+  src: url("/assets/fonts/quicksand-regular-webfont.eot");
+  src: url("/assets/fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/quicksand-regular-webfont.woff") format("woff"), url("/assets/fonts/quicksand-regular-webfont.ttf") format("truetype"), url("/assets/fonts/quicksand-regular-webfont.svg#quicksandregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+p {
+  margin: 0; }
+
 .minorsecond aside {
   width: 48.37929%; }
 .minorsecond section {
@@ -114,7 +131,8 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'quicksandbold'; }
 
 aside {
   height: 100%;
@@ -126,7 +144,9 @@ aside {
     text-align: center;
     height: 50%;
     display: block;
-    background: #666666; }
+    color: white;
+    background: #666666;
+    text-transform: uppercase; }
     aside a:before {
       content: '';
       display: inline-block;
@@ -136,11 +156,33 @@ aside {
       display: inline-block;
       vertical-align: middle; }
     aside a:hover {
-      background: #5b5b5b; }
+      background: #565656; }
+    aside a:active {
+      background: #606060; }
     aside a:nth-child(2n) {
       background: #474747; }
       aside a:nth-child(2n):hover {
         background: #383838; }
+      aside a:nth-child(2n):active {
+        background: #434343; }
+
+header {
+  text-align: center;
+  height: 20%; }
+  header:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  header > div {
+    display: inline-block;
+    vertical-align: middle; }
+  header p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'quicksandregular';
+    font-size: 28px;
+    font-size: 1.75rem; }
 
 section {
   background: #282828;

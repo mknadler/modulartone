@@ -8,15 +8,33 @@ aside {
 		@include center-parent;
 		height: 50%;
 		display: block;
+		color: $color-aside-font;
 		background: $color-aside-background;
+		text-transform: uppercase;
 		&:hover {
-			background: shade($color-aside-background, 10%);
+			background: shade($color-aside-background, 15%);
+		}
+		&:active {
+			background: shade($color-aside-background, 5%);
 		}
 		&:nth-child(2n){
 			background: $color-aside-background-alt;
 			&:hover {
 				background: shade($color-aside-background-alt, 20%);
 			}
+			&:active {
+				background: shade($color-aside-background-alt, 5%);
+			}
 	}
+	}
+}
+header {
+	@include center-parent;
+	height: 20%;
+	p {
+		display: inline-block;
+		vertical-align: middle;
+		font-family: 'quicksandregular';
+		@include scut-rem-fallback(28);
 	}
 }
