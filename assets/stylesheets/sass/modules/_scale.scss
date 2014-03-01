@@ -16,7 +16,7 @@ $MajorEleventh: 2.667;
 $MajorTwelfth: 3;
 $DoubleOctave: 4;
 
-$scale: $Octave;
+$scale: $MajorTenth;
 
-$left-width: ((1 / ($scale + 1))*100)%;
-$right-width: (($scale / ($scale + 1))*100)%;
+$left-width: (1 / ($scale + 1))*100%;
+$right-width: ($scale / ($scale + 1))*100%;
