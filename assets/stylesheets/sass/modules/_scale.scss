@@ -1,0 +1,22 @@
+$MinorSecond: 1.067;
+$MajorSecond: 1.125;
+$MinorThird: 1.2;
+$MajorThird: 1.25;
+$PerfectFourth: 1.33;
+$AugFourthDimFifth: 1.414;
+$PerfectFifth: 1.5;
+$MinorSixth: 1.6;
+$GoldenSection: 1.618;
+$MajorSixth: 1.667;
+$MinorSeventh: 1.778;
+$MajorSeventh: 1.875;
+$Octave: 2;
+$MajorTenth: 2.5;
+$MajorEleventh: 2.667;
+$MajorTwelfth: 3;
+$DoubleOctave: 4;
+
+$scale: $Octave;
+
+$left-width: ((1 / ($scale + 1))*100)%;
+$right-width: (($scale / ($scale + 1))*100)%;
