@@ -22,6 +22,17 @@ aside {
     aside div:nth-child(2n) {
       background: #474747; }
 
+aside div {
+  text-align: center; }
+  aside div:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  aside div > div {
+    display: inline-block;
+    vertical-align: middle; }
+
 section {
   background: #222;
   width: 71.42857%;
@@ -34,10 +45,11 @@ section {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
+  section > div {
+    display: inline-block;
+    vertical-align: middle; }
 
 .triangle {
-  display: inline-block;
-  vertical-align: middle;
   width: 0;
   height: 0;
   border-top: 100px solid transparent;

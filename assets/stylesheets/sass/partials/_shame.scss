@@ -20,12 +20,9 @@ aside {
 		}
 	}
 }
-section {
-	background: #222;
-	width: $right-width;
-	height: 100%;
-	float: left;
-	position: relative;
+
+// Adapted from css-tricks.com/centering-in-the-unknown
+@mixin center-parent {
 	text-align: center;
 	&:before {
 		content: '';
@@ -33,10 +30,27 @@ section {
 		height: 100%;
 		vertical-align: middle;
 	}
+	& > div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+aside {
+	div {
+		@include center-parent;
+	}
+}
+
+section {
+	background: #222;
+	width: $right-width;
+	height: 100%;
+	float: left;
+	position: relative;
+	@include center-parent;
 }
 .triangle {
-		display: inline-block;
-	vertical-align: middle;
 	width: 0;
 	height: 0;
 	border-top: 100px solid transparent;
