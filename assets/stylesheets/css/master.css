@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'quicksandbold';
-  src: url("/assets/fonts/quicksand-bold-webfont.eot");
-  src: url("/assets/fonts/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/quicksand-bold-webfont.woff") format("woff"), url("/assets/fonts/quicksand-bold-webfont.ttf") format("truetype"), url("/assets/fonts/quicksand-bold-webfont.svg#quicksandbold") format("svg");
+  src: url("../../assets/fonts/quicksand-bold-webfont.eot");
+  src: url("../../../assets/fonts/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/quicksand-bold-webfont.woff") format("woff"), url("../../../assets/fonts/quicksand-bold-webfont.ttf") format("truetype"), url("../../../assets/fonts/quicksand-bold-webfont.svg#quicksandbold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'quicksandregular';
-  src: url("/assets/fonts/quicksand-regular-webfont.eot");
-  src: url("/assets/fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/quicksand-regular-webfont.woff") format("woff"), url("/assets/fonts/quicksand-regular-webfont.ttf") format("truetype"), url("/assets/fonts/quicksand-regular-webfont.svg#quicksandregular") format("svg");
+  src: url("../../../assets/fonts/quicksand-regular-webfont.eot");
+  src: url("../../../assets/fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/quicksand-regular-webfont.woff") format("woff"), url("../../../assets/fonts/quicksand-regular-webfont.ttf") format("truetype"), url("../../../assets/fonts/quicksand-regular-webfont.svg#quicksandregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -208,3 +208,25 @@ section {
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-left: 140px solid #FFF; }
+
+section span {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  z-index: 3;
+  color: white; }
+
+/* have the numbers of the ratios at the
+bottom, one on each side
+so like: 1 : 2 for octave,
+1 in aside / 2 in section
+assign classes to the numbers
+w/ javascript
+
+.num-shown
+transition: color .5s ease-in;
+color: white
+.num-hidden: 
+background-color: (background color
+	of parent);
+	*/

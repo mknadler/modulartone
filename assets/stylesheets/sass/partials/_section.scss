@@ -8,7 +8,7 @@ section {
 	@include center-parent;
 	&:hover{
 		background: shade($color-section-background, 20%);
-	}	
+	}
 }
 
 .triangle {
@@ -18,3 +18,28 @@ section {
 	border-bottom: 100px solid transparent;
 	border-left: 140px solid #FFF;
 }
+
+section {
+	span {
+		position: fixed;
+		bottom: 2em;
+		right: 2em;
+		z-index: 3;
+		color: white;
+	}
+}
+
+/* have the numbers of the ratios at the
+bottom, one on each side
+so like: 1 : 2 for octave,
+1 in aside / 2 in section
+assign classes to the numbers
+w/ javascript
+
+.num-shown
+transition: color .5s ease-in;
+color: white
+.num-hidden: 
+background-color: (background color
+	of parent);
+	*/
