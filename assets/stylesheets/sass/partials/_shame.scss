@@ -1,0 +1,29 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+}
+aside {
+	height: 100%;
+	width: 20%;
+	background: #666;
+	float: left;
+	position: relative;
+	overflow: auto;
+	div {
+		height: 50%;
+		&:nth-child(2n) {
+			background: shade(#666, 30%)
+		}
+	}
+}
+section {
+	background: #222;
+	width: 80%;
+	height: 100%;
+	float: left;
+	position: relative;
+}

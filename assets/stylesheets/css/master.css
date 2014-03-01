@@ -1,12 +1,34 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 /*
 $mobile: new-breakpoint(max-width 480px 4);
 $tablet: new-breakpoint(max-width 720px 8);
 */
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px; }
+
+aside {
+  height: 100%;
+  width: 20%;
+  background: #666;
+  float: left;
+  position: relative;
+  overflow: auto; }
+  aside div {
+    height: 50%; }
+    aside div:nth-child(2n) {
+      background: #474747; }
+
+section {
+  background: #222;
+  width: 80%;
+  height: 100%;
+  float: left;
+  position: relative; }
+
 /** Notes
 
 Bourbon have a clearfix in bourbon/addons. just use @include clearfix;
