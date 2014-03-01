@@ -1,0 +1,13 @@
+@mixin center-parent {
+	text-align: center;
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	& > div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

@@ -1,1 +1,22 @@
-// Styles for the left-hand side
+aside {
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: auto;
+	transition: width 1s ease-in-out;
+	a {
+		@include center-parent;
+		height: 50%;
+		display: block;
+		background: $color-aside-background;
+		&:hover {
+			background: shade($color-aside-background, 10%);
+		}
+		&:nth-child(2n){
+			background: $color-aside-background-alt;
+			&:hover {
+				background: shade($color-aside-background-alt, 20%);
+			}
+	}
+	}
+}
