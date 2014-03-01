@@ -9,6 +9,7 @@ $("aside a").on("click", function (e) {
         $("body").addClass(next_interval);
     }
 
+    $("section span").text(scales[next_interval]);
     current_interval = next_interval;
 });
 
