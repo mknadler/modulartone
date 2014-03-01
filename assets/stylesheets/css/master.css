@@ -1,0 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+$mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(max-width 720px 8);
+*/
+/** Notes
+
+Bourbon have a clearfix in bourbon/addons. just use @include clearfix;
+
+**/
