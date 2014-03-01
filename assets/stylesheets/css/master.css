@@ -12,7 +12,7 @@ body {
 
 aside {
   height: 100%;
-  width: 20%;
+  width: 28.57143%;
   background: #666;
   float: left;
   position: relative;
@@ -24,7 +24,7 @@ aside {
 
 section {
   background: #222;
-  width: 80%;
+  width: 71.42857%;
   height: 100%;
   float: left;
   position: relative; }
@@ -34,3 +34,18 @@ section {
 Bourbon have a clearfix in bourbon/addons. just use @include clearfix;
 
 **/
+aside {
+  transition: width 1s ease-in-out; }
+
+section {
+  transition: width 1s ease-in-out; }
+
+.octave aside {
+  width: 33.33%; }
+.octave section {
+  width: 66.66%; }
+
+.fifth aside {
+  width: 40%; }
+.fifth section {
+  width: 60%; }
