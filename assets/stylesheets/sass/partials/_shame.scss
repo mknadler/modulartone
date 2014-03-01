@@ -8,16 +8,17 @@ body {
 }
 aside {
 	height: 100%;
-	width: $left-width;
+	//width: $left-width;
 	background: #666;
 	float: left;
 	position: relative;
 	overflow: auto;
-	div {
+	a {
 		height: 50%;
-		&:nth-child(2n) {
+		display: block;
+		&:nth-child(2n){
 			background: shade(#666, 30%)
-		}
+	}
 	}
 }
 
@@ -37,14 +38,14 @@ aside {
 }
 
 aside {
-	div {
+	a {
 		@include center-parent;
 	}
 }
 
 section {
 	background: #222;
-	width: $right-width;
+	//width: $right-width;
 	height: 100%;
 	float: left;
 	position: relative;

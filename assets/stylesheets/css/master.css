@@ -2,6 +2,116 @@
 $mobile: new-breakpoint(max-width 480px 4);
 $tablet: new-breakpoint(max-width 720px 8);
 */
+.minorsecond aside {
+  width: 48.37929%; }
+.minorsecond section {
+  width: 51.62071%; }
+
+.majorsecond aside {
+  width: 47.05882%; }
+.majorsecond section {
+  width: 52.94118%; }
+
+.minorthird aside {
+  width: 45.45455%; }
+.minorthird section {
+  width: 54.54545%; }
+
+.majorthird aside {
+  width: 44.44444%; }
+.majorthird section {
+  width: 55.55556%; }
+
+.perfectfourth aside {
+  width: 42.91845%; }
+.perfectfourth section {
+  width: 57.08155%; }
+
+.augfourthdimfifth aside {
+  width: 41.42502%; }
+.augfourthdimfifth section {
+  width: 58.57498%; }
+
+.perfectfifth aside {
+  width: 40%; }
+.perfectfifth section {
+  width: 60%; }
+
+.minorsixth aside {
+  width: 38.46154%; }
+.minorsixth section {
+  width: 61.53846%; }
+
+.goldensection aside {
+  width: 38.1971%; }
+.goldensection section {
+  width: 61.8029%; }
+
+.majorsixth aside {
+  width: 37.49531%; }
+.majorsixth section {
+  width: 62.50469%; }
+
+.minorseventh aside {
+  width: 35.99712%; }
+.minorseventh section {
+  width: 64.00288%; }
+
+.majorseventh aside {
+  width: 34.78261%; }
+.majorseventh section {
+  width: 65.21739%; }
+
+.octave aside {
+  width: 33.33333%; }
+.octave section {
+  width: 66.66667%; }
+
+.majortenth aside {
+  width: 28.57143%; }
+.majortenth section {
+  width: 71.42857%; }
+
+.majoreleventh aside {
+  width: 27.27025%; }
+.majoreleventh section {
+  width: 72.72975%; }
+
+.majortwelfth aside {
+  width: 25%; }
+.majortwelfth section {
+  width: 75%; }
+
+.doubleoctave aside {
+  width: 20%; }
+.doubleoctave section {
+  width: 80%; }
+
+/*
+.minorsecond{
+	aside {
+		width: 1 / ($MinorSecond + 1))*100%;
+	}
+}
+
+.octave {
+    aside {
+        width: 33.33%;
+    }
+    section {
+        width: 66.66%;
+    }
+}
+
+.fifth {
+    aside {
+        width: 40%;
+    }
+    section {
+        width: 60%;
+    }
+}
+*/
 html {
   height: 100%; }
 
@@ -12,30 +122,29 @@ body {
 
 aside {
   height: 100%;
-  width: 28.57143%;
   background: #666;
   float: left;
   position: relative;
   overflow: auto; }
-  aside div {
-    height: 50%; }
-    aside div:nth-child(2n) {
+  aside a {
+    height: 50%;
+    display: block; }
+    aside a:nth-child(2n) {
       background: #474747; }
 
-aside div {
+aside a {
   text-align: center; }
-  aside div:before {
+  aside a:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  aside div > div {
+  aside a > div {
     display: inline-block;
     vertical-align: middle; }
 
 section {
   background: #222;
-  width: 71.42857%;
   height: 100%;
   float: left;
   position: relative;

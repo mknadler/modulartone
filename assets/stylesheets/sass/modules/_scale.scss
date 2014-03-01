@@ -1,22 +1,65 @@
-$MinorSecond: 1.067;
-$MajorSecond: 1.125;
-$MinorThird: 1.2;
-$MajorThird: 1.25;
-$PerfectFourth: 1.33;
-$AugFourthDimFifth: 1.414;
-$PerfectFifth: 1.5;
-$MinorSixth: 1.6;
-$GoldenSection: 1.618;
-$MajorSixth: 1.667;
-$MinorSeventh: 1.778;
-$MajorSeventh: 1.875;
-$Octave: 2;
-$MajorTenth: 2.5;
-$MajorEleventh: 2.667;
-$MajorTwelfth: 3;
-$DoubleOctave: 4;
+$minorsecond: 1.067;
+$majorsecond: 1.125;
+$minorthird: 1.2;
+$majorthird: 1.25;
+$perfectfourth: 1.33;
+$augfourthdimfifth: 1.414;
+$perfectfifth: 1.5;
+$minorsixth: 1.6;
+$goldensection: 1.618;
+$majorsixth: 1.667;
+$minorseventh: 1.778;
+$majorseventh: 1.875;
+$octave: 2;
+$majortenth: 2.5;
+$majoreleventh: 2.667;
+$majortwelfth: 3;
+$doubleoctave: 4;
 
-$scale: $MajorTenth;
+//$scale: $MajorTenth;
 
-$left-width: (1 / ($scale + 1))*100%;
-$right-width: ($scale / ($scale + 1))*100%;
+//$left-width: (1 / ($scale + 1))*100%;
+//$right-width: ($scale / ($scale + 1))*100%;
+
+$scales: minorsecond 1.067, majorsecond 1.125, minorthird 1.2, majorthird 1.25, perfectfourth 1.33, augfourthdimfifth 1.414, perfectfifth 1.5, minorsixth 1.6, goldensection 1.618, majorsixth 1.667, minorseventh 1.778, majorseventh 1.875, octave 2, majortenth 2.5, majoreleventh 2.667, majortwelfth 3, doubleoctave 4;
+
+@each $scale in $scales {
+	$type: nth($scale, 1);
+	$ratio: nth($scale, 2);
+
+	.#{$type}{
+		aside {
+			width: (1 / ($ratio + 1))*100%;
+		}
+		section {
+			width: ($ratio / ($ratio + 1))*100%;
+		}
+	}
+}
+
+
+/*
+.minorsecond{
+	aside {
+		width: 1 / ($MinorSecond + 1))*100%;
+	}
+}
+
+.octave {
+    aside {
+        width: 33.33%;
+    }
+    section {
+        width: 66.66%;
+    }
+}
+
+.fifth {
+    aside {
+        width: 40%;
+    }
+    section {
+        width: 60%;
+    }
+}
+*/
