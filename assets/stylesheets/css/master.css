@@ -135,11 +135,12 @@ body {
   font-family: 'quicksandbold'; }
 
 aside {
-  height: 100%;
+  height: 95%;
   float: left;
   position: relative;
   overflow: hidden;
-  transition: width 1s ease-in-out; }
+  transition: width 1s ease-in-out;
+  transition: height 1s; }
   aside a {
     text-align: center;
     height: 50%;
@@ -169,7 +170,9 @@ aside {
 
 header {
   text-align: center;
-  height: 20%; }
+  height: 5%;
+  width: 100%;
+  transition: height 1s; }
   header:before {
     content: '';
     display: inline-block;
@@ -185,6 +188,13 @@ header {
     font-size: 28px;
     font-size: 1.75rem; }
 
+.header-open header {
+  height: 15%; }
+.header-open aside {
+  height: 85%; }
+.header-open section {
+  height: 85%; }
+
 .scroll {
   width: 100%;
   height: 100%;
@@ -193,10 +203,11 @@ header {
 
 section {
   background: #282828;
-  height: 100%;
+  height: 95%;
   float: left;
   position: relative;
   transition: width 1s ease-in-out;
+  transition: height 1s;
   text-align: center; }
   section:before {
     content: '';
