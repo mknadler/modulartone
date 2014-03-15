@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     
+    
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Title block allowing child pages to override -->
@@ -17,9 +17,10 @@
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
         <!-- include JS libs -->
+        <script type="text/javascript" src="//use.typekit.net/zoo4rwe.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         {{ "jquery.min.js" | asset_url | script_tag }}
         {{ "modernizr.min.js" | asset_url | script_tag }}
-
     </head>
     <body class="minorsecond">
       <!--[if lt IE 7]>

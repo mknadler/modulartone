@@ -19,3 +19,22 @@
   #{$property}: $rem-vals;
 
 }
+
+// same as above
+
+@mixin rem (
+  $pixels,
+  $property: font-size
+) {
+
+  $px-vals: null;
+  @each $val in $pixels {
+    $val-in-px: scut-strip-unit($val) * 1px;
+    $px-vals: append($px-vals, $val-in-px);
+  }
+  $rem-vals: scut-rem($pixels);
+
+  #{$property}: $px-vals;
+  #{$property}: $rem-vals;
+
+}
