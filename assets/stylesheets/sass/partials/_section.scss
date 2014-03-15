@@ -4,7 +4,8 @@ section {
 	height: 95%;
 	float: left;
 	position: relative;
-	transition: width 1s ease-in-out, height 1s;
+	transition: width 1s ease-in-out;
+	transition: height 1s;
 	@include center-parent;
 	&:hover{
 		background: shade($color-section-background, 20%);
