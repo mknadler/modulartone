@@ -12,7 +12,7 @@ aside {
 		color: $color-aside-font;
 		background: $color-aside-background;
 		text-transform: uppercase;
-		margin-right: -15px;
+		margin-right: -18px;
 		@include rem(16);
 		&:hover {
 			background: shade($color-aside-background, 15%);
@@ -64,9 +64,6 @@ aside {
 	}
 	}
 }
-
-
-
 
 // Not the most semantic, but it's a way to hide the scrollbar
 // in combination with the negative margin on the <a>s
