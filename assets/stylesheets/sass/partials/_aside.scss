@@ -1,10 +1,9 @@
 aside {
-	height: 95%;
+	height: 100%;
 	float: left;
 	position: relative;
 	overflow: hidden;
 	transition: width 1s ease-in-out;
-	transition: height 1s;
 	a {
 		@include center-parent;
 		height: 50%;
@@ -30,6 +29,7 @@ aside {
 	}
 	}
 }
+/*
 header {
 	@include center-parent;
 	height: 5%;
@@ -41,7 +41,7 @@ header {
 		font-family: 'quicksandregular';
 		@include scut-rem-fallback(28);
 	}
-}
+} 
 .header-open {
 	header {
 	height: 15%;
@@ -56,6 +56,7 @@ header {
 aside .header-open, section .header-open {
 
 }
+*/
 
 // Not the most semantic, but it's a way to hide the scrollbar
 // in combination with the negative margin on the <a>s

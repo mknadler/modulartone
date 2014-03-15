@@ -32,9 +32,3 @@ var scales = {
 	majortwelfth: "1:3",
 	doubleoctave: "1:4"
 };
-
-$(function(){
-    $('header').on('click', function(){
-        $("body").toggleClass('header-open');
-   });
-});
