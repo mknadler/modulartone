@@ -1,4 +1,4 @@
-var current_interval = undefined;
+var current_interval = 'minorsecond';
 var scales = {
 	minorsecond: "15:16",
 	majorsecond: "8:9",
@@ -22,6 +22,7 @@ var scales = {
 var ac = new (window.webkitAudioContext);
 
 var current_sound = null;
+var stopping = false;
 $("aside a.interval").on("click", function (e) {
     e.preventDefault();
     var next_interval = $(e.currentTarget).data("interval-class");
@@ -42,11 +43,13 @@ $('section').on('click', function (e) {
 
 
 var play_interval = function(ratio) {
+    if (stopping) {
+        return;
+    }
+
     if (current_sound !== null) {
         stop_sound(current_sound.base_oscillator, current_sound.interval_oscillator, current_sound.gain_node, 0.2);        
-        setTimeout(function() {
-            play_interval(ratio, null);
-        }, 205);
+        setTimeout(function() {play_interval(ratio);}, 205);
         return;
     }
 
@@ -74,7 +77,6 @@ var play_interval = function(ratio) {
     base_oscillator.noteOn(0);
     interval_oscillator.noteOn(0);
 
-
     setTimeout(function () {
         stop_sound(base_oscillator, interval_oscillator, gn, 1);
     }, 1000);
@@ -87,15 +89,20 @@ var play_interval = function(ratio) {
 }
 
 var stop_sound = function(base_oscillator, interval_oscillator, gain_node, fadeout_seconds) {
+    stopping = true;
+
     var now = ac.currentTime;
     gain_node.gain.linearRampToValueAtTime(0.0, now + fadeout_seconds);
 
     setTimeout(function () {
         base_oscillator.noteOff(0);
         interval_oscillator.noteOff(0);
+
         base_oscillator.disconnect();
         interval_oscillator.disconnect();
         gain_node.disconnect();
+
         current_sound = null;
+        stopping = false;
     }, (fadeout_seconds * 1000) + 10);
 }
