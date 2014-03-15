@@ -22,7 +22,7 @@ var scales = {
 var ac = new (window.webkitAudioContext);
 
 var current_sound = null;
-$("aside a").on("click", function (e) {
+$("aside a.interval").on("click", function (e) {
     e.preventDefault();
     var next_interval = $(e.currentTarget).data("interval-class");
     if (current_interval) {
