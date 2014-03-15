@@ -3,8 +3,7 @@ aside {
 	float: left;
 	position: relative;
 	overflow: hidden;
-	transition: width 1s ease-in-out;
-	transition: height 1s;
+	transition: width 1s ease-in-out, height 1s;
 	a {
 		@include center-parent;
 		height: 50%;

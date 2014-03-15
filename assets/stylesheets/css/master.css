@@ -139,8 +139,7 @@ aside {
   float: left;
   position: relative;
   overflow: hidden;
-  transition: width 1s ease-in-out;
-  transition: height 1s; }
+  transition: width 1s ease-in-out, height 1s; }
   aside a {
     text-align: center;
     height: 50%;
@@ -206,8 +205,7 @@ section {
   height: 95%;
   float: left;
   position: relative;
-  transition: width 1s ease-in-out;
-  transition: height 1s;
+  transition: width 1s ease-in-out, height 1s;
   text-align: center; }
   section:before {
     content: '';
