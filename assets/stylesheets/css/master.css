@@ -212,7 +212,10 @@ aside {
         background: #434343; }
   aside header {
     font-family: "brandon-grotesque", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    color: #282828; }
+    color: #282828;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-bottom: 1.875rem; }
     aside header h1 {
       font-weight: 900;
       font-size: 60px;
@@ -229,20 +232,35 @@ aside {
       font-weight: 100;
       font-size: 36px;
       font-size: 2.25rem;
-      margin: 10px 0px;
-      margin: 0.625rem 0rem;
-      text-align: center; }
-    aside header a {
-      font-weight: 100;
+      margin: 25px 0px;
+      margin: 1.5625rem 0rem;
+      text-align: center;
+      margin-bottom: 30px; }
+    aside header a, aside header span {
+      font-header: "proxima-nova-soft", Futura, "Trebuchet MS", Arial, sans-serif;
       font-size: 20px;
       font-size: 1.25rem;
+      text-transform: lowercase; }
+    aside header a {
+      font-weight: 400;
       margin: 30px 0px;
       margin: 1.875rem 0rem;
       text-decoration: none;
-      text-align: center;
-      display: block; }
-      aside header a:link, aside header a:visited, aside header a:hover, aside header a:active {
+      display: inline;
+      width: 50%;
+      color: #777;
+      line-height: 1.4; }
+      aside header a:hover, aside header a:active {
         color: black; }
+    aside header span {
+      font-weight: 100;
+      text-transform: none;
+      padding: 10px;
+      font-size: 15px;
+      font-size: 0.9375rem; }
+      aside header span a {
+        font-size: inherit;
+        margin: none; }
 
 .scroll {
   width: 100%;
