@@ -68,6 +68,9 @@ Sound.prototype = {
         this.interval_oscillator.connect(this.gain_node);
 
         this.gain_node.connect(this.audio_context.destination);
+
+        this.base_oscillator.noteOn(0);
+        this.interval_oscillator.noteOn(0);
     },
     _changeOscillatorFrequency: function() {
         this.base_oscillator.frequency.value = this.base_frequency;
@@ -91,8 +94,6 @@ Sound.prototype = {
         var start_time = this.audio_context.currentTime;
         this.gain_node.gain.setValueAtTime(0, start_time);
         this.gain_node.gain.linearRampToValueAtTime( 0.25, start_time + seconds );
-        this.base_oscillator.noteOn(0);
-        this.interval_oscillator.noteOn(0);
 
         setTimeout($.proxy(this._changeState, this), (seconds * 1000) + 10, this.STATE_PLAYING);
     },
