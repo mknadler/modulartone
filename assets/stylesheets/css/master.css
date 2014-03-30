@@ -234,10 +234,9 @@ aside {
       font-size: 2.25rem;
       margin: 25px 0px;
       margin: 1.5625rem 0rem;
-      text-align: center;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-bottom: 1.875rem; }
     aside header a, aside header span {
-      font-header: "proxima-nova-soft", Futura, "Trebuchet MS", Arial, sans-serif;
       font-size: 20px;
       font-size: 1.25rem;
       text-transform: lowercase; }
@@ -268,7 +267,7 @@ aside {
   overflow: auto;
   padding-right: 20px; }
 
-section {
+section:not(.new) {
   background: #282828;
   height: 100%;
   float: left;
@@ -276,15 +275,15 @@ section {
   transition: width 1s ease-in-out;
   font-family: "proxima-nova-soft", Futura, "Trebuchet MS", Arial, sans-serif;
   text-align: center; }
-  section:before {
+  section:not(.new):before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  section > div {
+  section:not(.new) > div {
     display: inline-block;
     vertical-align: middle; }
-  section:hover {
+  section:not(.new):hover {
     background: #202020; }
 
 .triangle {
@@ -300,6 +299,41 @@ section span {
   right: 2em;
   z-index: 3;
   color: white; }
+
+section.new {
+  height: 100%;
+  float: left;
+  position: relative;
+  transition: width 1s ease-in-out;
+  font-family: "brandon-grotesque", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; }
+  section.new .textwrap {
+    padding: 30px;
+    padding: 1.875rem; }
+  section.new h1 {
+    display: inline-block; }
+  section.new p {
+    font-family: "brandon-grotesque", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem; }
+  section.new h1 {
+    font-family: "brandon-grotesque", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 80px;
+    font-size: 5rem;
+    line-height: 0.375;
+    line-height: 0.375;
+    margin-top: 0.375px;
+    margin-top: 0.375rem;
+    margin-bottom: 0.375px;
+    margin-bottom: 0.375rem; }
 
 /* have the numbers of the ratios at the
 bottom, one on each side

@@ -1,4 +1,4 @@
-section {
+section:not(.new) {
 	background: $color-section-background;
 	//width: $right-width;
 	height: 100%;
@@ -27,6 +27,61 @@ section {
 		right: 2em;
 		z-index: 3;
 		color: white;
+	}
+}
+
+$int: 4;
+//PX fallback
+$b-font-size: 20px;
+$b-line-height: $b-font-size*1.5;
+$b-margin-top: $b-line-height;
+$b-margin-bottom: $b-line-height;
+$h-font-size: $b-font-size * $int;
+$h-line-height: $b-line-height / ($b-font-size * $int);
+$h-margin-top: #{$h-line-height}px;
+$h-margin-bottom: #{$h-line-height}px;
+//REM
+$b-rem-font-size: 1.25rem;
+$b-rem-line-height: $b-rem-font-size*1.5;
+$b-rem-margin-top: $b-rem-line-height;
+$b-rem-margin-bottom: $b-rem-line-height;
+$h-rem-font-size: $b-rem-font-size * $int;
+$h-rem-line-height: $b-rem-line-height / ($b-rem-font-size * $int);
+$h-rem-margin-top: #{$h-rem-line-height}rem;
+$h-rem-margin-bottom: #{$h-rem-line-height}rem;
+
+
+
+section.new {
+	height: 100%;
+	float: left;
+	position: relative;
+	transition: width 1s ease-in-out;
+	font-family: $font-header;
+	.textwrap{@include rem(30,padding);}
+	h1 {display: inline-block;}
+	p {
+		@include brandon(3);
+		font-size: $b-font-size;
+		line-height: $b-line-height;
+		margin-top: $b-line-height;
+		margin-bottom: $b-line-height;
+		font-size: $b-rem-font-size;
+		line-height: $b-rem-line-height;
+		margin-top: $b-rem-line-height;
+		margin-bottom: $b-rem-line-height;
+	}
+	h1 {
+		@include brandon(5);
+		text-align: center;
+		font-size: $h-font-size;
+		font-size: $h-rem-font-size;
+		line-height: $h-line-height;
+		line-height: $h-rem-line-height;
+		margin-top: $h-margin-top;
+		margin-top: $h-rem-margin-top;
+		margin-bottom: $h-margin-bottom;
+		margin-bottom: $h-rem-margin-bottom;
 	}
 }
 
