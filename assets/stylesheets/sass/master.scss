@@ -7,10 +7,11 @@
 @import "modules/fonts";
 @import "modules/colors";
 @import "modules/mixins";
-@import "modules/typography";
 @import "modules/reset";
 @import "modules/scale";
+@import "modules/typography"; // dependency: /fonts
 @import "modules/all";
+
 
 // Import Partials
 @import "partials/aside";
