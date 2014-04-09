@@ -301,11 +301,12 @@ section span {
   color: white; }
 
 section.new {
-  height: 100%;
+  max-height: 100%;
   float: left;
   position: relative;
   transition: width 1s ease-in-out;
-  font-family: "brandon-grotesque", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; }
+  font-family: "brandon-grotesque", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  overflow: scroll; }
   section.new .textwrap {
     padding: 30px;
     padding: 1.875rem; }
