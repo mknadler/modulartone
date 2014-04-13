@@ -53,36 +53,21 @@ $h-rem-margin-bottom: #{$h-rem-line-height}rem;
 
 
 section.new {
-	max-height: 100%;
+	height: 100%;
 	float: left;
 	position: relative;
 	transition: width 1s ease-in-out;
-	font-family: $font-header;
 	overflow: scroll;
-	.textwrap{@include rem(30,padding);}
-	h1 {display: inline-block;}
+	background: #f2f2f2;
+	.textwrap{@include rem(36,padding);}
 	p {
-		@include brandon(3);
-		font-size: $b-font-size;
-		line-height: $b-line-height;
-		margin-top: $b-line-height;
-		margin-bottom: $b-line-height;
-		font-size: $b-rem-font-size;
-		line-height: $b-rem-line-height;
-		margin-top: $b-rem-line-height;
-		margin-bottom: $b-rem-line-height;
-	}
-	h1 {
-		@include brandon(5);
-		text-align: center;
-		font-size: $h-font-size;
-		font-size: $h-rem-font-size;
-		line-height: $h-line-height;
-		line-height: $h-rem-line-height;
-		margin-top: $h-margin-top;
-		margin-top: $h-rem-margin-top;
-		margin-bottom: $h-margin-bottom;
-		margin-bottom: $h-rem-margin-bottom;
+		font-family: $effra;
+		font-weight: 300;
+		@include rem(24);
+		color: #8c8b8b;
+		line-height: 1.5;
+		@include rem(36, margin-bottom);
+		@include rem(0 36, padding);
 	}
 }
 

@@ -10,3 +10,43 @@
 // /_/ /_/ \____/ \__/ \___//____/                  
 //
 //                                               
+
+
+Section text color: 
+#8c8b8b
+
+Section background color: 
+#f2f2f2
+
+Aside top bg:
+#e3e4e5
+
+'Modular' color:
+#b2b2b2
+
+'Tone' color:
+9e9e9e
+
+First nav bg:
+#9e9e9e
+
+Second nav bg:
+#8c8b8b
+
+Interval name:
+#cccccc
+
+Interval numberic:
+#b2b2b2
+
+bolt svg:
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="36.715px" height="31.377px" viewBox="0 0 36.715 31.377" enable-background="new 0 0 36.715 31.377" xml:space="preserve">
+<g>
+	<polyline fill="#B7B7B7" points="9.531,31.375 0,15.686 8.826,-0.001 27.184,0 	"/>
+	<polyline fill="#CCCCCC" points="27.184,0 36.715,15.69 27.889,31.377 9.531,31.375 	"/>
+</g>
+</svg>
+
+weights: 300, 500, 700

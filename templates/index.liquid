@@ -1,12 +1,20 @@
 {% block content %}
 	
 	<aside>
-
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="36.715px" height="31.377px" viewBox="0 0 36.715 31.377" enable-background="new 0 0 36.715 31.377" xml:space="preserve">
+<g>
+	<polyline fill="#B7B7B7" points="9.531,31.375 0,15.686 8.826,-0.001 27.184,0 	"/>
+	<polyline fill="#CCCCCC" points="27.184,0 36.715,15.69 27.889,31.377 9.531,31.375 	"/>
+</g>
+</svg>
 		<div class="scroll">
-		<header><h1>Modular Tone</h1><h2>hearing ratios,<br/> seeing sound.</h2><a href="https://github.com/mknadler/modulartone">view source and more info</a><br><span>by <a href="#">@twitter</a> and <a href="#">@twitter</a></header>
+		<header>
+		<h1><span>Modular</span><br><span>Tone</span></h1>
+		</header>
 		<a href="#" class="interval" data-interval-class="minorsecond"><div><span>Minor Second</div></span></a>
 
-        <a href="#" class="interval" data-interval-class="majorsecond"><div><span>Major Second</span><span></span></div></a>
+        <a href="#" class="interval" data-interval-class="majorsecond"><div><span>Major Second</span></div></a>
 
         <a href="#" class="interval" data-interval-class="minorthird"><div><span>Minor Third</span></div></a>
 
@@ -37,10 +45,15 @@
 		<a href="#" class="interval" data-interval-class="majortwelfth"><div><span>Major Twelfth</span></div></a>
 
 		<a href="#" class="interval" data-interval-class="doubleoctave"><div><span>Double Octave</span></div></a>
-	</aside>
 	</div>
-	<section>
-        <div class="triangle"></div>
-		<span>1 : 4</span>
+		</aside>
+
+	<section class="new">
+		<div class="textwrap">
+		<p>This project attempts to illustrate the connection between the scales commonly used  in art and design and the musical intervals which inspire those scales.</p>
+		<p>Confused? Consider an octave. The A note above middle C has a frequency of 440hz; the next A note above that has a frequency of 880hz. The ratio of these frequencies, and of every octave interval, is 1:2.</p>
+		<p>Every musical interval can be represented by a ratio, such as 1:2, and every ratio can in turn be represented visually, by, in this case, the proportions of this website.</p>
+		<p>Our insipiration: modularscale.com and Robert Bringhurst’s “Elements of Typographic Style.”</p>
+	</div>
 	</section>
 {% endblock %}
