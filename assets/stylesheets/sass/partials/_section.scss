@@ -30,6 +30,25 @@ section {
 	}
 }
 
+svg.play, svg.pause {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 66%;
+	opacity: .5;
+
+}
+svg.play {
+	z-index: 1;
+	display: none;
+}
+svg.pause {
+	z-index: 2;
+	display: none;
+}
+
 $int: 4;
 //PX fallback
 $b-font-size: 20px;

@@ -75,18 +75,18 @@ $("aside a.interval").on("click", function (e) {
     $("section span").text(scales[next_interval]);
     ModularTone.sound.transitionTo(next_interval);
 
-    var bolt = $("svg");
+    var bolt = $("svg.bolt");
     
     /* lol sorry */
     var for_mula = decimals[next_interval];
     var mula = (100*(1 / (for_mula + 1)))-2;
 
     if (forsvg[current_interval] < forsvg[next_interval]) {
-    		bolt.css({rotate: '-=60deg', left: mula + '%'}, 1000, 'in-out');
+    		bolt.css({rotate: '-=100deg', left: mula + '%'}, 1000, 'in-out');
     		//n -= 60;
     }
     else if (forsvg[current_interval] > forsvg[next_interval]) {
-    		bolt.css({rotate: '+=60deg', left: mula + '%'}, 1000, 'in-out');
+    		bolt.css({rotate: '+=100deg', left: mula + '%'}, 1000, 'in-out');
     		//n += 60;
     }
     else {

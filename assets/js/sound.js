@@ -10,12 +10,19 @@ var Sound = function (interval) {
     this._setupOscillators();
 };
 
+var pause = $("svg.pause");
+var play = $("svg.play");
+
 Sound.prototype = {
     togglePlaying: function() {
         if (this.state === this.STATE_STOPPED) {
             this.playSound();
+            play.css('display', 'none');
+            pause.css('display', 'block');
         } else if (this.state === this.STATE_PLAYING) {
             this.stopSound();
+            play.css('display', 'block');
+            pause.css('display', 'none');
         }
     },
     playSound: function() {

@@ -333,24 +333,12 @@ header {
     header h1 span:nth-of-type(2) {
       color: #9e9e9e; }
 
-svg {
+svg.bolt {
   transition: all 1s ease-in-out;
   position: fixed;
   left: 46.37%;
   top: 20%;
   z-index: 10; }
-
-svg.turn-right {
-  -ms-transform: rotate(100deg);
-  /* IE 9 */
-  -webkit-transform: rotate(100deg);
-  transform: rotate(100deg); }
-
-svg.turn-left {
-  -ms-transform: rotate(-100deg);
-  /* IE 9 */
-  -webkit-transform: rotate(-100deg);
-  transform: rotate(-100deg); }
 
 body.majortenth .interval span, body.majoreleventh .interval span, body.majortwelfth .interval span, body.doubleoctave .interval span {
   transition: padding-left 1s ease-in-out, font-size 1s ease-in-out;
@@ -464,6 +452,23 @@ section span {
   right: 2em;
   z-index: 3;
   color: white; }
+
+svg.play, svg.pause {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 66%;
+  opacity: .5; }
+
+svg.play {
+  z-index: 1;
+  display: none; }
+
+svg.pause {
+  z-index: 2;
+  display: none; }
 
 section.new {
   height: 100%;
