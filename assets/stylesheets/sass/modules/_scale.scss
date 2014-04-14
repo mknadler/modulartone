@@ -34,9 +34,11 @@ $scales: minorsecond 1.067, majorsecond 1.125, minorthird 1.2, majorthird 1.25, 
 		section {
 			width: ($ratio / ($ratio + 1))*100%;
 		}
+		/*
 		svg {
 			left: ((1 / ($ratio + 1))*100%)-1.5%;
 		}
+		*/
 	}
 }
 

@@ -43,6 +43,26 @@ var forsvg = {
 	doubleoctave: 17
 };
 
+var decimals = {
+	minorsecond: 1.067,
+	majorsecond: 1.125,
+	minorthird: 1.2,
+	majorthird: 1.25,
+	perfectfourth: 1.33,
+	augfourthdimfifth: 1.414,
+	perfectfifth: 1.5,
+	minorsixth: 1.6,
+	goldensection: 1.618,
+	majorsixth: 1.667,
+	minorseventh: 1.778,
+	majorseventh: 1.875,
+	octave: 2,
+	majortenth: 2.5,
+	majoreleventh: 2.667,
+	majortwelfth: 3,
+	doubleoctave: 4
+};
+
 $("aside a.interval").on("click", function (e) {
     e.preventDefault();
     var next_interval = $(e.currentTarget).data("interval-class");
@@ -56,13 +76,18 @@ $("aside a.interval").on("click", function (e) {
     ModularTone.sound.transitionTo(next_interval);
 
     var bolt = $("svg");
-    var newLeft = $("svg span").css("left");
+    
+    /* lol sorry */
+    var for_mula = decimals[next_interval];
+    var mula = (100*(1 / (for_mula + 1)))-2;
 
     if (forsvg[current_interval] < forsvg[next_interval]) {
-    		bolt.transition({rotate: '-30deg'});
+    		bolt.css({rotate: '-=60deg', left: mula + '%'}, 1000, 'in-out');
+    		//n -= 60;
     }
     else if (forsvg[current_interval] > forsvg[next_interval]) {
-    		bolt.transition({rotate: '30deg'});
+    		bolt.css({rotate: '+=60deg', left: mula + '%'}, 1000, 'in-out');
+    		//n += 60;
     }
     else {
     	// don't turn
