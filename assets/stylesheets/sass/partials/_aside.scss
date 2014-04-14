@@ -59,6 +59,17 @@ svg {
 	z-index: 10;
 }
 
+svg.turn-right{
+-ms-transform: rotate(100deg); /* IE 9 */
+-webkit-transform: rotate(100deg);
+transform: rotate(100deg);
+}
+svg.turn-left{
+-ms-transform: rotate(-100deg); /* IE 9 */
+-webkit-transform: rotate(-100deg);
+transform: rotate(-100deg);
+}
+
 body.majortenth, body.majoreleventh, body.majortwelfth, body.doubleoctave {
 	
 	.interval span {
