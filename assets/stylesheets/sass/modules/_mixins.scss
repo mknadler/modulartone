@@ -11,3 +11,10 @@
 		vertical-align: middle;
 	}
 }
+@mixin vertical{
+	@media (max-width: 1000px) {@content;}
+};
+
+%vertical {
+	@include vertical;
+}

@@ -72,10 +72,12 @@ $h-rem-margin-bottom: #{$h-rem-line-height}rem;
 
 
 section.new {
-	height: 100%;
 	float: left;
 	position: relative;
-	transition: width 1s ease-in-out;
+	transition: width 1s ease-in-out; 
+	@include vertical{
+		transition: height 1s ease-in-out;
+	}
 	overflow: scroll;
 	background: #f2f2f2;
 	.textwrap{

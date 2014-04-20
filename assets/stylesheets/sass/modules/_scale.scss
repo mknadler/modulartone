@@ -30,9 +30,19 @@ $scales: minorsecond 1.067, majorsecond 1.125, minorthird 1.2, majorthird 1.25, 
 	.#{$type}{
 		aside {
 			width: (1 / ($ratio + 1))*100%;
+			height: 100%;
+			@include vertical {
+				height: (1 / ($ratio + 1))*100%;
+				width: 100%;
+			}
 		}
 		section {
 			width: ($ratio / ($ratio + 1))*100%;
+			height: 100%;
+			@include vertical {
+				height: ($ratio / ($ratio + 1))*100%;
+				width: 100%;
+			}
 		}
 		/*
 		svg {

@@ -1,12 +1,16 @@
 aside {
-	height: 100%;
 	float: left;
 	position: relative;
 	overflow: hidden;
 	transition: width 1s ease-in-out;
+	@include vertical {
+		transition: height 1s ease-in-out
+	}
 }
 
 .interval {
+
+	// Horizontally-oriented (default)
 	@include center-parent;
 	height: 10%;
 	display: block;
@@ -27,12 +31,27 @@ aside {
 		transition: padding-left 1s ease-in-out, font-size 1s ease-in-out;
 		@include rem(54, padding-left);
 	}
+
+	// Vertically-oriented
+		@include vertical {
+		height: 100%;
+		display: inline-block;
+		margin-right: 0;
+		span {
+			padding-left: 0;
+		}
+	}
+
 }
 
 header {
 		background: #e3e4e5;
 		position: relative;
 		z-index: 0;
+		@include vertical {
+			height: 100%;
+			float: left;
+		}
 		h1 {
 			transition: padding-left 1s ease-in-out;
 			@include rem(54, padding);
@@ -125,4 +144,5 @@ body.majortenth, body.majoreleventh, body.majortwelfth, body.doubleoctave {
 	height: 100%;
 	overflow: auto;
 	padding-right: 20px;
+	white-space: nowrap;
 }

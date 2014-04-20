@@ -64,9 +64,19 @@ table {
   }
   */ }
   .minorsecond aside {
-    width: 48.37929%; }
+    width: 48.37929%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorsecond aside {
+        height: 48.37929%;
+        width: 100%; } }
   .minorsecond section {
-    width: 51.62071%; }
+    width: 51.62071%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorsecond section {
+        height: 51.62071%;
+        width: 100%; } }
 
 .majorsecond {
   /*
@@ -75,9 +85,19 @@ table {
   }
   */ }
   .majorsecond aside {
-    width: 47.05882%; }
+    width: 47.05882%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorsecond aside {
+        height: 47.05882%;
+        width: 100%; } }
   .majorsecond section {
-    width: 52.94118%; }
+    width: 52.94118%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorsecond section {
+        height: 52.94118%;
+        width: 100%; } }
 
 .minorthird {
   /*
@@ -86,9 +106,19 @@ table {
   }
   */ }
   .minorthird aside {
-    width: 45.45455%; }
+    width: 45.45455%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorthird aside {
+        height: 45.45455%;
+        width: 100%; } }
   .minorthird section {
-    width: 54.54545%; }
+    width: 54.54545%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorthird section {
+        height: 54.54545%;
+        width: 100%; } }
 
 .majorthird {
   /*
@@ -97,9 +127,19 @@ table {
   }
   */ }
   .majorthird aside {
-    width: 44.44444%; }
+    width: 44.44444%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorthird aside {
+        height: 44.44444%;
+        width: 100%; } }
   .majorthird section {
-    width: 55.55556%; }
+    width: 55.55556%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorthird section {
+        height: 55.55556%;
+        width: 100%; } }
 
 .perfectfourth {
   /*
@@ -108,9 +148,19 @@ table {
   }
   */ }
   .perfectfourth aside {
-    width: 42.91845%; }
+    width: 42.91845%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .perfectfourth aside {
+        height: 42.91845%;
+        width: 100%; } }
   .perfectfourth section {
-    width: 57.08155%; }
+    width: 57.08155%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .perfectfourth section {
+        height: 57.08155%;
+        width: 100%; } }
 
 .augfourthdimfifth {
   /*
@@ -119,9 +169,19 @@ table {
   }
   */ }
   .augfourthdimfifth aside {
-    width: 41.42502%; }
+    width: 41.42502%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .augfourthdimfifth aside {
+        height: 41.42502%;
+        width: 100%; } }
   .augfourthdimfifth section {
-    width: 58.57498%; }
+    width: 58.57498%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .augfourthdimfifth section {
+        height: 58.57498%;
+        width: 100%; } }
 
 .perfectfifth {
   /*
@@ -130,9 +190,19 @@ table {
   }
   */ }
   .perfectfifth aside {
-    width: 40%; }
+    width: 40%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .perfectfifth aside {
+        height: 40%;
+        width: 100%; } }
   .perfectfifth section {
-    width: 60%; }
+    width: 60%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .perfectfifth section {
+        height: 60%;
+        width: 100%; } }
 
 .minorsixth {
   /*
@@ -141,9 +211,19 @@ table {
   }
   */ }
   .minorsixth aside {
-    width: 38.46154%; }
+    width: 38.46154%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorsixth aside {
+        height: 38.46154%;
+        width: 100%; } }
   .minorsixth section {
-    width: 61.53846%; }
+    width: 61.53846%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorsixth section {
+        height: 61.53846%;
+        width: 100%; } }
 
 .goldensection {
   /*
@@ -152,9 +232,19 @@ table {
   }
   */ }
   .goldensection aside {
-    width: 38.1971%; }
+    width: 38.1971%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .goldensection aside {
+        height: 38.1971%;
+        width: 100%; } }
   .goldensection section {
-    width: 61.8029%; }
+    width: 61.8029%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .goldensection section {
+        height: 61.8029%;
+        width: 100%; } }
 
 .majorsixth {
   /*
@@ -163,9 +253,19 @@ table {
   }
   */ }
   .majorsixth aside {
-    width: 37.49531%; }
+    width: 37.49531%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorsixth aside {
+        height: 37.49531%;
+        width: 100%; } }
   .majorsixth section {
-    width: 62.50469%; }
+    width: 62.50469%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorsixth section {
+        height: 62.50469%;
+        width: 100%; } }
 
 .minorseventh {
   /*
@@ -174,9 +274,19 @@ table {
   }
   */ }
   .minorseventh aside {
-    width: 35.99712%; }
+    width: 35.99712%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorseventh aside {
+        height: 35.99712%;
+        width: 100%; } }
   .minorseventh section {
-    width: 64.00288%; }
+    width: 64.00288%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .minorseventh section {
+        height: 64.00288%;
+        width: 100%; } }
 
 .majorseventh {
   /*
@@ -185,9 +295,19 @@ table {
   }
   */ }
   .majorseventh aside {
-    width: 34.78261%; }
+    width: 34.78261%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorseventh aside {
+        height: 34.78261%;
+        width: 100%; } }
   .majorseventh section {
-    width: 65.21739%; }
+    width: 65.21739%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majorseventh section {
+        height: 65.21739%;
+        width: 100%; } }
 
 .octave {
   /*
@@ -196,9 +316,19 @@ table {
   }
   */ }
   .octave aside {
-    width: 33.33333%; }
+    width: 33.33333%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .octave aside {
+        height: 33.33333%;
+        width: 100%; } }
   .octave section {
-    width: 66.66667%; }
+    width: 66.66667%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .octave section {
+        height: 66.66667%;
+        width: 100%; } }
 
 .majortenth {
   /*
@@ -207,9 +337,19 @@ table {
   }
   */ }
   .majortenth aside {
-    width: 28.57143%; }
+    width: 28.57143%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majortenth aside {
+        height: 28.57143%;
+        width: 100%; } }
   .majortenth section {
-    width: 71.42857%; }
+    width: 71.42857%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majortenth section {
+        height: 71.42857%;
+        width: 100%; } }
 
 .majoreleventh {
   /*
@@ -218,9 +358,19 @@ table {
   }
   */ }
   .majoreleventh aside {
-    width: 27.27025%; }
+    width: 27.27025%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majoreleventh aside {
+        height: 27.27025%;
+        width: 100%; } }
   .majoreleventh section {
-    width: 72.72975%; }
+    width: 72.72975%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majoreleventh section {
+        height: 72.72975%;
+        width: 100%; } }
 
 .majortwelfth {
   /*
@@ -229,9 +379,19 @@ table {
   }
   */ }
   .majortwelfth aside {
-    width: 25%; }
+    width: 25%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majortwelfth aside {
+        height: 25%;
+        width: 100%; } }
   .majortwelfth section {
-    width: 75%; }
+    width: 75%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .majortwelfth section {
+        height: 75%;
+        width: 100%; } }
 
 .doubleoctave {
   /*
@@ -240,9 +400,19 @@ table {
   }
   */ }
   .doubleoctave aside {
-    width: 20%; }
+    width: 20%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .doubleoctave aside {
+        height: 20%;
+        width: 100%; } }
   .doubleoctave section {
-    width: 80%; }
+    width: 80%;
+    height: 100%; }
+    @media (max-width: 1000px) {
+      .doubleoctave section {
+        height: 80%;
+        width: 100%; } }
 
 /*
 .minorsecond{
@@ -279,11 +449,13 @@ body {
   font-family: 'quicksandbold'; }
 
 aside {
-  height: 100%;
   float: left;
   position: relative;
   overflow: hidden;
   transition: width 1s ease-in-out; }
+  @media (max-width: 1000px) {
+    aside {
+      transition: height 1s ease-in-out; } }
 
 .interval {
   text-align: center;
@@ -313,11 +485,22 @@ aside {
     transition: padding-left 1s ease-in-out, font-size 1s ease-in-out;
     padding-left: 54px;
     padding-left: 3.375rem; }
+  @media (max-width: 1000px) {
+    .interval {
+      height: 100%;
+      display: inline-block;
+      margin-right: 0; }
+      .interval span {
+        padding-left: 0; } }
 
 header {
   background: #e3e4e5;
   position: relative;
   z-index: 0; }
+  @media (max-width: 1000px) {
+    header {
+      height: 100%;
+      float: left; } }
   header h1 {
     transition: padding-left 1s ease-in-out;
     padding: 54px;
@@ -418,7 +601,8 @@ body.majortenth header h1, body.majoreleventh header h1, body.majortwelfth heade
   width: 100%;
   height: 100%;
   overflow: auto;
-  padding-right: 20px; }
+  padding-right: 20px;
+  white-space: nowrap; }
 
 section:not(.new) {
   background: #282828;
@@ -472,12 +656,14 @@ svg.pause {
   display: none; }
 
 section.new {
-  height: 100%;
   float: left;
   position: relative;
   transition: width 1s ease-in-out;
   overflow: scroll;
   background: #f2f2f2; }
+  @media (max-width: 1000px) {
+    section.new {
+      transition: height 1s ease-in-out; } }
   section.new .textwrap {
     padding: 36px;
     padding: 2.25rem;
