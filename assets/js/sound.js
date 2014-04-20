@@ -1,17 +1,15 @@
-define(function() {
-    var Sound = function (interval, scales, pause, play) {
+define(["scales.min"], function(Scales) {
+    var Sound = function (interval, pause, play) {
         this.STATE_STOPPED = 1;
         this.STATE_PLAYING = 2;
         this.STATE_CHANGING = 3;
 
-        this.scales = scales;
         this.state = this.STATE_STOPPED;
 
         this.base_frequency = 440;
         this._setInterval(interval);
         this._setupOscillators();
     };
-
 
     Sound.prototype = {
         togglePlaying: function() {
@@ -105,7 +103,7 @@ define(function() {
             setTimeout($.proxy(this._changeState, this), (seconds * 1000) + 10, this.STATE_PLAYING);
         },
         _setInterval: function(interval) {
-            var ratio_components = this.scales[interval].split(':');
+            var ratio_components = Scales[interval].split(':');
             var ratio = (+ ratio_components[1]) / (+ ratio_components[0]);
 
             this.current_interval = interval;
