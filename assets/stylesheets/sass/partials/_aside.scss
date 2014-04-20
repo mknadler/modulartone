@@ -37,8 +37,11 @@ aside {
 		height: 100%;
 		display: inline-block;
 		margin-right: 0;
+		width: 40%;
+		text-align: center;
 		span {
 			padding-left: 0;
+
 		}
 	}
 
@@ -125,7 +128,17 @@ body.majortenth, body.majoreleventh, body.majortwelfth, body.doubleoctave {
 							(17, '1:4') {
 	.interval:nth-of-type(#{$number}){
 		span:after{
-			content: ' (#{$ratios})';
+				content: ' (#{$ratios})';
+			@include vertical{
+				content: '(#{$ratios})';
+				display: block;
+				@include rem(32, margin-top);
+			}
+		}
+		@include vertical {
+			span {
+				@include rem (24);
+			}
 		}
 	}
 
@@ -144,5 +157,8 @@ body.majortenth, body.majoreleventh, body.majortwelfth, body.doubleoctave {
 	height: 100%;
 	overflow: auto;
 	padding-right: 20px;
-	white-space: nowrap;
+	@include vertical {
+		white-space: nowrap;
+		padding-right: 0;
+	}
 }
