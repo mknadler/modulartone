@@ -31,7 +31,6 @@
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
         {{ "transit.js" | asset_url | script_tag }}
-        {{ "app.js" | asset_url | script_tag }}
-        {{ "sound.js" | asset_url | script_tag }}
+        <script data-main="assets/js/app" src="{{ "require.js" | asset_url }}"></script>
     </body>
 </html>
