@@ -1,4 +1,4 @@
-define(["scales"], function() {
+define(function() {
     return {
         ratios: {
             minorsecond: "15:16",

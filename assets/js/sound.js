@@ -1,4 +1,4 @@
-define(["Sound"], function() {
+define(function() {
     var Sound = function (interval, scales, pause, play) {
         this.STATE_STOPPED = 1;
         this.STATE_PLAYING = 2;

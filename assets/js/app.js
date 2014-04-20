@@ -1,4 +1,4 @@
-require(["sound", "scales"], function (Sound, Scales) {
+require(["sound.min", "scales.min"], function (Sound, Scales) {
     var ModularTone = {};
 
     var pause_button = $("svg.pause");
