@@ -9,44 +9,20 @@
 </svg></div> -->
 	<aside>
 		<div class="scroll">
-		<header>
-		<h1><span>Modular</span><br><span>Tone</span></h1>
-		</header>
-		<a href="#" class="interval" data-interval-class="minorsecond"><div><span>Minor Second</div></span></a><!--
+            <header>
+                <h1><span>Modular</span><br><span>Tone</span></h1>
+            </header>
 
-        --><a href="#" class="interval" data-interval-class="majorsecond"><div><span>Major Second</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="minorthird"><div><span>Minor Third</span></div></a><!--
-
-		--><a href="#" class="interval" data-interval-class="majorthird"><div><span>Major Third</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="perfectfourth"><div><span>Perfect Fourth</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="augfourthdimfifth"><div><span>Aug. Fourth / Dim. Fifth</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="perfectfifth"><div><span>Perfect Fifth</span></div></a><!--
-
-		--><a href="#" class="interval" data-interval-class="minorsixth"><div><span>Minor Sixth</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="goldensection"><div><span>Golden Section</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="majorsixth"><div><span>Major Sixth</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="minorseventh"><div><span>Minor Seventh</span></div></a><!--
-
-		--><a href="#" class="interval" data-interval-class="majorseventh"><div><span>Major Seventh</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="octave"><div><span>Octave</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="majortenth"><div><span>Major Tenth</span></div></a><!--
-
-        --><a href="#" class="interval" data-interval-class="majoreleventh"><div><span>Major Eleventh</span></div></a><!--
-
-		--><a href="#" class="interval" data-interval-class="majortwelfth"><div><span>Major Twelfth</span></div></a><!--
-
-		--><a href="#" class="interval" data-interval-class="doubleoctave"><div><span>Double Octave</span></div></a>
-	</div>
-		</aside>
+            <!-- cuddling our intervals with HTML comments ensures that
+                 no spaces screw up the inline-blocks
+            {% for interval in model.intervals %}
+                --><a href="#" class="interval" data-interval-class="{{ interval.class }}">
+                    <div><span>{{ interval.display_text }}</div></span>
+                   </a><!--
+            {% endfor %}
+            -->
+        </div>
+    </aside>
 
 	<section class="new">
 

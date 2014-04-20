@@ -1,0 +1,69 @@
+{
+    "intervals": [
+        {
+            "display_text": "Minor Second",
+            "class": "minorsecond"
+        },
+        {
+            "display_text": "Major Second",
+            "class": "majorsecond"
+        },
+        {
+            "display_text": "Minor Third",
+            "class": "minorthird"
+        },
+        {
+            "display_text": "Major Third",
+            "class": "majorthird"
+        },
+        {
+            "display_text": "Perfect Fourth",
+            "class": "perfectfourth"
+        },
+        {
+            "display_text": "Aug. Fourth/Dim. Fifth",
+            "class": "augforthdimfifth"
+        },
+        {
+            "display_text": "Perfect Fifth",
+            "class": "perfectfifth"
+        },
+        {
+            "display_text": "Golden Section",
+            "class": "goldensection"
+        },
+        {
+            "display_text": "Major Sixth",
+            "class": "majorsixth"
+        },
+        {
+            "display_text": "Minor Seventh",
+            "class": "minorseventh"
+        },
+        {
+            "display_text": "Major Seventh",
+            "class": "majorseventh"
+        },
+        {
+            "display_text": "Octave",
+            "class": "octave"
+        },
+        {
+            "display_text": "Major Tenth",
+            "class": "majortenth"
+        },
+        {
+            "display_text": "Major Eleventh",
+            "class": "majoreleventh"
+        },
+        {
+            "display_text": "Major Twelfth",
+            "class": "majortwelfth"
+        },
+        {
+            "display_text": "Double Octave",
+            "class": "doubleoctave"
+        }
+    ],
+    "foo": "bar"
+}
