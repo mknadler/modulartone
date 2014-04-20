@@ -36,9 +36,9 @@ svg.play, svg.pause {
 	display: block;
 	position: absolute;
 	top: 25%;
-	left: 66%;
+	left: 25%;
+	right: 25%;
 	opacity: .5;
-
 }
 svg.play {
 	z-index: 1;
@@ -78,7 +78,11 @@ section.new {
 	transition: width 1s ease-in-out;
 	overflow: scroll;
 	background: #f2f2f2;
-	.textwrap{@include rem(36,padding);}
+	.textwrap{
+		@include rem(36,padding);
+		z-index: 3;
+		position: absolute;
+	}
 	p {
 		font-family: $effra;
 		font-weight: 300;

@@ -79,7 +79,8 @@ $("aside a.interval").on("click", function (e) {
     
     /* lol sorry */
     var for_mula = decimals[next_interval];
-    var mula = (100*(1 / (for_mula + 1)))-2;
+    // var mula = (100*(1 / (for_mula + 1)))-2;
+    var mula = (1/(for_mula+1))*97;
 
     if (forsvg[current_interval] < forsvg[next_interval]) {
     		bolt.css({rotate: '-=100deg', left: mula + '%'}, 1000, 'in-out');
