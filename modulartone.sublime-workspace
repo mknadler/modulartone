@@ -44,19 +44,22 @@
 	},
 	"file_history":
 	[
+		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/partials/_shame.scss",
+		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/master.scss",
+		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/partials/_aside.scss",
+		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/modules/_mixins.scss",
+		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/partials/_section.scss",
+		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/modules/_scale.scss",
+		"/Users/miriam/Documents/Web/modulartone/templates/index.liquid",
+		"/Users/miriam/Documents/Web/boltjs.js",
 		"/Users/miriam/Documents/Web/doyouwanttostandinthesunlightlikeanasshole/index.html",
 		"/Users/miriam/Documents/Web/doyouwanttostandinthesunlightlikeanasshole/assets/js/app.js",
 		"/Users/miriam/Documents/Web/doyouwanttostandinthesunlightlikeanasshole/assets/stylesheets/sass/partials/_shame.scss",
 		"/Users/miriam/Documents/Web/doyouwanttostandinthesunlightlikeanasshole/assets/js/pace.min.js",
 		"/Users/miriam/Documents/Web/modulartone/Project Notes",
-		"/Users/miriam/Documents/Web/modulartone/templates/index.liquid",
 		"/Users/miriam/Documents/Web/modulartone/templates/layouts/layout.liquid",
-		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/modules/_scale.scss",
 		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/modules/_typography.scss",
 		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/modules/_fonts.scss",
-		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/modules/_mixins.scss",
-		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/partials/_aside.scss",
-		"/Users/miriam/Documents/Web/modulartone/assets/stylesheets/sass/partials/_section.scss",
 		"/Users/miriam/Documents/Web/modulartone/assets/js/app.js",
 		"/Users/miriam/Documents/Web/modulartone/assets/js/transit.js",
 		"/Users/miriam/Documents/Web/modulartone/assets/js/sound.js",
@@ -111,16 +114,6 @@
 			"sheets":
 			[
 			]
-		},
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
-			]
 		}
 	],
 	"incremental_find":
@@ -140,25 +133,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.462131782946,
-			0.943683381783,
 			1.0
 		],
 		"rows":
