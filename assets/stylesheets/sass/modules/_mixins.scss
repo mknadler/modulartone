@@ -13,8 +13,10 @@
 }
 @mixin vertical{
 	@media (max-width: 1000px) {@content;}
-};
-
-%vertical {
-	@include vertical;
+}
+@mixin vertical-medium{
+	@media (max-width: 750px) {@content;}
+}
+@mixin vertical-small{
+	@media (max-width: 500px) {@content;}
 }

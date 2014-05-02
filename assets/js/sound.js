@@ -15,12 +15,8 @@ define(["scales.min"], function(Scales) {
         togglePlaying: function() {
             if (this.state === this.STATE_STOPPED) {
                 this.playSound();
-                play.css('display', 'none');
-                pause.css('display', 'block');
             } else if (this.state === this.STATE_PLAYING) {
                 this.stopSound();
-                play.css('display', 'block');
-                pause.css('display', 'none');
             }
         },
         playSound: function() {

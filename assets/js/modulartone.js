@@ -18,7 +18,7 @@ define(["sound.min"], function(Sound) {
             if (this.current_interval) {
                 body.removeClass(this.current_interval)
             }
-
+ 
             // Transition to selected interval
             body.addClass(next_interval);
             this.sound.transitionTo(next_interval);

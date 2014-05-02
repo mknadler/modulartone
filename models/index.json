@@ -21,12 +21,15 @@
             "class": "perfectfourth"
         },
         {
-            "display_text": "Aug. Fourth/Dim. Fifth",
-            "class": "augforthdimfifth"
+            "display_text": "Aug. Fourth/<br>Dim. Fifth",
+            "class": "augfourthdimfifth"
         },
         {
             "display_text": "Perfect Fifth",
             "class": "perfectfifth"
+        },
+        {   "display_text": "Minor Sixth",
+            "class": "minorsixth"
         },
         {
             "display_text": "Golden Section",

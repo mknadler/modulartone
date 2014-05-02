@@ -10,13 +10,15 @@
 	<aside>
 		<div class="scroll">
             <header>
-                <h1><span>Modular</span><br><span>Tone</span></h1>
+                <!--<h1><span>Modular</span><br><span>Tone</span></h1>
+            	-->
+            	<img src="assets/img/logo.svg">
             </header>
 
             <!-- cuddling our intervals with HTML comments ensures that
                  no spaces screw up the inline-blocks
             {% for interval in model.intervals %}
-                --><a href="#" class="interval" data-interval-class="{{ interval.class }}"><div><span>{{ interval.display_text }}</div></span></a><!--
+                --><a href="#" class="interval" data-interval-class="{{ interval.class }}"><div><span class="display-text">{{ interval.display_text }}</span></div><span class="icon icon-play"></span></a><!--
             {% endfor %}
             -->
         </div>
