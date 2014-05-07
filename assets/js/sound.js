@@ -58,6 +58,8 @@ define(["scales.min"], function(Scales) {
             this.audio_context = new window.webkitAudioContext();
             this.gain_node = this.audio_context.createGainNode();
 
+            this.gain_node.gain.value = 0.0;
+
             this.base_oscillator = this.audio_context.createOscillator();
             this.base_oscillator.type = 3;
             this.base_oscillator.frequency.value = this.base_frequency;
