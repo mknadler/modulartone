@@ -16,12 +16,9 @@ $majoreleventh: 2.667;
 $majortwelfth: 3;
 $doubleoctave: 4;
 
-//$scale: $MajorTenth;
+//$scales: minorsecond 1.067, majorsecond 1.125, minorthird 1.2, majorthird 1.25, perfectfourth 1.33, augfourthdimfifth 1.414, perfectfifth 1.5, minorsixth 1.6, goldensection 1.618, majorsixth 1.667, minorseventh 1.778, majorseventh 1.875, octave 2, majortenth 2.5, majoreleventh 2.667, majortwelfth 3, doubleoctave 4;
+$scales: (minorsecond:1.067, majorsecond:1.125, minorthird:1.2, majorthird:1.25, perfectfourth:1.33, augfourthdimfifth:1.414, perfectfifth:1.5, minorsixth:1.6, goldensection:1.618, majorsixth:1.667, minorseventh:1.778, majorseventh:1.875, octave:2, majortenth:2.5, majoreleventh:2.667, majortwelfth:3, doubleoctave:4);
 
-//$left-width: (1 / ($scale + 1))*100%;
-//$right-width: ($scale / ($scale + 1))*100%;
-
-$scales: minorsecond 1.067, majorsecond 1.125, minorthird 1.2, majorthird 1.25, perfectfourth 1.33, augfourthdimfifth 1.414, perfectfifth 1.5, minorsixth 1.6, goldensection 1.618, majorsixth 1.667, minorseventh 1.778, majorseventh 1.875, octave 2, majortenth 2.5, majoreleventh 2.667, majortwelfth 3, doubleoctave 4;
 
 @each $scale in $scales {
 	$type: nth($scale, 1);
@@ -44,13 +41,33 @@ $scales: minorsecond 1.067, majorsecond 1.125, minorthird 1.2, majorthird 1.25, 
 				width: 100%;
 			}
 		}
-		/*
-		svg {
-			left: ((1 / ($ratio + 1))*100%)-1.5%;
+	}
+	$base: lighten(#000000, ((1.067/$ratio)*100%));
+	$shadow-base: lighten(#555, ((1.067/$ratio)*100%));
+	[data-interval-class = "#{$type}"]{
+		background-color: $base;
+		&:active {
+			background-color: darken($base, 10%);
 		}
-		*/
+		@if $ratio >= 2.5 {
+			text-shadow: 1px 1px 0px invert($shadow-base);
+		} @else {
+			text-shadow: 1px 1px 0px $shadow-base;
+		}
+		@if 2.4 < $ratio and $ratio < 2.7 {
+			color: #a4a4a4;
+		} @else if 1.75 < $ratio and $ratio < 2.1 {
+			color: #5c5c5c;
+		} @else {
+			color: invert($base);
+		}
+		.icon {
+			color: invert($base);
+			text-shadow: none;
+		}
 	}
 }
+
 
 $ratios: (
 	2:'15:16',
@@ -71,28 +88,3 @@ $ratios: (
 	17: '1:3',
 	18: '1:4',
 );
-/*
-.minorsecond{
-	aside {
-		width: 1 / ($MinorSecond + 1))*100%;
-	}
-}
-
-.octave {
-    aside {
-        width: 33.33%;
-    }
-    section {
-        width: 66.66%;
-    }
-}
-
-.fifth {
-    aside {
-        width: 40%;
-    }
-    section {
-        width: 60%;
-    }
-}
-*/

@@ -21,6 +21,7 @@ aside {
 	font-family: $effra;
 	font-weight: 500;
 	position: relative;
+	/*
 	&:nth-child(2n){
 		background: #8c8b8b;
 		&:hover {
@@ -39,8 +40,9 @@ aside {
 			background: darken(#9e9e9e, 5%);
 		}
 	}
+	*/
 	span.display-text {
-		color: #cccccc;
+		//color: #cccccc;
 		transition: padding-left 1s ease-in-out, font-size 1s ease-in-out;
 		@include rem(54, padding-left);
 	}
@@ -59,6 +61,8 @@ aside {
 	}
 
 }
+
+
 
 header {
 		background: #e3e4e5;
