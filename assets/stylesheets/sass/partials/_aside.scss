@@ -21,28 +21,8 @@ aside {
 	font-family: $effra;
 	font-weight: 500;
 	position: relative;
-	/*
-	&:nth-child(2n){
-		background: #8c8b8b;
-		&:hover {
-			background: lighten(#8c8b8b, 5%);
-		}
-		&:active {
-			background: darken(#8c8b8b, 5%);
-		}
-	}
-	&:nth-child(2n-1){
-		background: #9e9e9e;
-		&:hover {
-			background: lighten(#9e9e9e, 5%);
-		}
-		&:active {
-			background: darken(#9e9e9e, 5%);
-		}
-	}
-	*/
+
 	span.display-text {
-		//color: #cccccc;
 		transition: padding-left 1s ease-in-out, font-size 1s ease-in-out;
 		@include rem(54, padding-left);
 	}
@@ -93,15 +73,6 @@ header {
 			}
 		}
 }
-
-svg.bolt {
-	transition: all 1s ease-in-out;
-	position: fixed;
-	left: 46.37%;
-	top: 45%;
-	z-index: 10;
-}
-
 
 body.majortenth, body.majoreleventh, body.majortwelfth, body.doubleoctave {
 	
@@ -182,23 +153,6 @@ body.majortenth, body.majoreleventh, body.majortwelfth, body.doubleoctave {
 	text-decoration: none;
 	display: inline-block;
 }
-/*
-div.icon-holder {
-	display: inline-block;
-	background: #e3e4e5;
-	position: relative;
-	right: 0;
-		float: left;
-	@include vertical {
-
-		display: inline-block;
-		height: 20%;
-		width: 100%;
-		bottom: 0;
-		overflow: none;
-	}
-}
-*/
 
 .icon {
 	color: #ccc;
@@ -223,15 +177,23 @@ div.icon-holder {
 
 header img {
 	height: 80%;
-	margin: auto;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	//margin: auto;
+	//padding-top: 5%;
+	//padding-bottom: 5%;
+	//@include rem(50, margin-left);
 	display: block;
 	opacity: .9;
+	width: 80%;
+	position: absolute;
+	left: .5rem;
+	top: 1rem;
+	transition: width 1s ease-in-out, height 1s ease-in-out;
 	@include vertical {
-		height: 30%;
+		position: relative;
+		left: 2rem;
 		//@include rem (24, padding);
-		@include rem(40 80 0 80, margin);
+		//@include rem(40 80 0 80, margin);
+
 	}
 }
 

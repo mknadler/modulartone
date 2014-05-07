@@ -12,64 +12,35 @@ section:not(.new) {
 	}
 }
 
-.triangle {
-	width: 0;
-	height: 0;
-	border-top: 100px solid transparent;
-	border-bottom: 100px solid transparent;
-	border-left: 140px solid #FFF;
+span#horizontal-description {
+	display: inline;
+}
+span#vertical-description {
+	display: none;
 }
 
-section {
-	span {
-		position: fixed;
-		bottom: 2em;
-		right: 2em;
-		z-index: 3;
-		color: white;
+@include vertical {
+	span#horizontal-description {
+	display: none;
+	}
+	span#vertical-description {
+	display: inline;
 	}
 }
 
-svg.play, svg.pause {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	position: absolute;
-	top: 25%;
-	left: 25%;
-	right: 25%;
-	opacity: .5;
+section {
+	a {
+		text-decoration: none;
+		color: darken(#8c8b8b, 10%);
+		border-bottom: 1px solid #8c8b8b;
+		&:hover {
+			color: lighten(#8c8b8b, 10%);
+		}
+		&:active {
+			color: darken(#8c8b8b, 20%);
+		}
+	}
 }
-svg.play {
-	z-index: 1;
-	display: none;
-}
-svg.pause {
-	z-index: 2;
-	display: none;
-}
-
-$int: 4;
-//PX fallback
-$b-font-size: 20px;
-$b-line-height: $b-font-size*1.5;
-$b-margin-top: $b-line-height;
-$b-margin-bottom: $b-line-height;
-$h-font-size: $b-font-size * $int;
-$h-line-height: $b-line-height / ($b-font-size * $int);
-$h-margin-top: #{$h-line-height}px;
-$h-margin-bottom: #{$h-line-height}px;
-//REM
-$b-rem-font-size: 1.25rem;
-$b-rem-line-height: $b-rem-font-size*1.5;
-$b-rem-margin-top: $b-rem-line-height;
-$b-rem-margin-bottom: $b-rem-line-height;
-$h-rem-font-size: $b-rem-font-size * $int;
-$h-rem-line-height: $b-rem-line-height / ($b-rem-font-size * $int);
-$h-rem-margin-top: #{$h-rem-line-height}rem;
-$h-rem-margin-bottom: #{$h-rem-line-height}rem;
-
-
 
 section.new {
 	float: left;

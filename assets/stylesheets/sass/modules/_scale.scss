@@ -50,9 +50,9 @@ $scales: (minorsecond:1.067, majorsecond:1.125, minorthird:1.2, majorthird:1.25,
 			background-color: darken($base, 10%);
 		}
 		@if $ratio >= 2.5 {
-			text-shadow: 1px 1px 0px invert($shadow-base);
+			//text-shadow: 1px 1px 0px invert($shadow-base);
 		} @else {
-			text-shadow: 1px 1px 0px $shadow-base;
+			//text-shadow: 1px 1px 0px $shadow-base;
 		}
 		@if 2.4 < $ratio and $ratio < 2.7 {
 			color: #a4a4a4;
@@ -61,10 +61,35 @@ $scales: (minorsecond:1.067, majorsecond:1.125, minorthird:1.2, majorthird:1.25,
 		} @else {
 			color: invert($base);
 		}
-		.icon {
-			color: invert($base);
-			text-shadow: none;
+		$text-color: #000 !default;
+
+		@if $ratio <= 1.33 {
+			$text-color: #888;
+		} @else if $ratio <= 1.5 {
+			$text-color: #666;
+		} @else if $ratio <= 1.67 {
+			$text-color: #505050;
+		} @else if $ratio <= 2 {
+			$text-color: #333;
+		} @else {
+			$text-color: #CCC;
 		}
+
+		color: $text-color;
+		.icon {
+			color: $text-color;
+		}
+		.icon.icon-stop{
+			padding: 3px;
+			border-radius: 18px;
+			color: $base;
+			background-color: $text-color;
+			right: 14.5%;
+			@include vertical {
+				right: 25%;
+			}
+		}
+
 	}
 }
 
