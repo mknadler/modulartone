@@ -30,10 +30,12 @@
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-play:before {
-  content: "\e602"; }
+  content: "\e602";
+  color: green; }
 
 .icon-stop:before {
-  content: "\e603"; }
+  content: "\e603";
+  color: red; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

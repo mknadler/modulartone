@@ -1,5 +1,5 @@
 define(["scales.min"], function(Scales) {
-    var Sound = function (interval, pause, play) {
+    var Sound = function (interval) {
         this.STATE_STOPPED = 1;
         this.STATE_PLAYING = 2;
         this.STATE_CHANGING = 3;
