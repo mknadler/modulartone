@@ -5,6 +5,7 @@ define(["scales.min"], function(Scales) {
         this.STATE_CHANGING = 3;
 
         this.state = this.STATE_STOPPED;
+        this.change_callback = undefined;
 
         this.base_frequency = 440;
         this._setInterval(interval);
@@ -12,6 +13,9 @@ define(["scales.min"], function(Scales) {
     };
 
     Sound.prototype = {
+        getState: function() {
+            return this.state;
+        },
         togglePlaying: function() {
             if (this.state === this.STATE_STOPPED) {
                 this.playSound();
@@ -24,7 +28,7 @@ define(["scales.min"], function(Scales) {
 
             if (this.state === this.STATE_STOPPED) {
                 this._changeState(this.STATE_CHANGING);
-                this._fadeIn(fade_seconds);
+                this._fadeIn(fade_seconds, true);
             }
         },
         stopSound: function() {
@@ -32,27 +36,33 @@ define(["scales.min"], function(Scales) {
 
             if (this.state === this.STATE_PLAYING) {
                 this._changeState(this.STATE_CHANGING);
-                this._fadeOut(fadeout_seconds);
+                this._fadeOut(fadeout_seconds, true);
             }
         },
         transitionTo: function(interval) {
             var fade_seconds = 0.5;
 
             if (this.state === this.STATE_PLAYING) {
+                this._changeState(this.STATE_CHANGING);
                 this._fadeOut(fade_seconds);
 
                 setTimeout(
                     $.proxy(function () {
                         this._setInterval(interval);
                         this._changeOscillatorFrequency();
-                        this._fadeIn(fade_seconds);
+                        this._changeState(this.STATE_CHANGING);
+                        this._fadeIn(fade_seconds, true);
                     }, this),
                     (fade_seconds * 1000) + 10
                 );
             } else if (this.state === this.STATE_STOPPED) {
                 this._setInterval(interval);
-                this._changeOscillatorFrequency(interval);
+                this._changeOscillatorFrequency();
+                this._fireChangeCallback();
             }
+        },
+        onChange: function (callback) {
+            this.change_callback = callback;
         },
         _setupOscillators: function() {
             this.audio_context = new window.webkitAudioContext();
@@ -87,18 +97,19 @@ define(["scales.min"], function(Scales) {
             this.interval_oscillator.disconnect();
             this.gain_node.disconnect();
         },
-        _fadeOut: function(seconds) {
+        _fadeOut: function(seconds, fire_callback) {
             var end_time = this.audio_context.currentTime;
             this.gain_node.gain.linearRampToValueAtTime(0.0, end_time + seconds);
 
-            setTimeout($.proxy(this._changeState, this), (seconds * 1000) + 10, this.STATE_STOPPED);
+            setTimeout($.proxy(this._changeState, this), (seconds * 1000) + 10, this.STATE_STOPPED, fire_callback);
+
         },
-        _fadeIn: function(seconds) {
+        _fadeIn: function(seconds, fire_callback) {
             var start_time = this.audio_context.currentTime;
             this.gain_node.gain.setValueAtTime(0, start_time);
             this.gain_node.gain.linearRampToValueAtTime( 0.25, start_time + seconds );
 
-            setTimeout($.proxy(this._changeState, this), (seconds * 1000) + 10, this.STATE_PLAYING);
+            setTimeout($.proxy(this._changeState, this), (seconds * 1000) + 10, this.STATE_PLAYING, fire_callback);
         },
         _setInterval: function(interval) {
             var ratio_components = Scales[interval].split(':');
@@ -107,8 +118,18 @@ define(["scales.min"], function(Scales) {
             this.current_interval = interval;
             this.interval_frequency = this.base_frequency * ratio; 
         },
-        _changeState: function(state) {
+        _changeState: function(state, fire_callback) {
             this.state = state;
+
+            if (fire_callback) {
+                this._fireChangeCallback();
+            }
+        },
+        _fireChangeCallback: function() {
+            if (this.change_callback !== undefined) {
+                this.change_callback();
+                this.change_callback = undefined;
+            }
         }
     };
 
