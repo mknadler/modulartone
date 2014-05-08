@@ -27,6 +27,13 @@ span#vertical-description {
 	display: inline;
 	}
 }
+#mobilewarning {
+	display: none;
+	@include vertical-medium{
+		display: inline;
+	}
+}
+
 
 section {
 	a {
@@ -64,6 +71,10 @@ section.new {
 		line-height: 1.5;
 		@include rem(36, margin-bottom);
 		@include rem(0 36, padding);
+		@include vertical-small {
+			@include rem(16);
+			@include rem(0 8, padding);
+		}
 	}
 }
 

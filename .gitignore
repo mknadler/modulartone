@@ -1,2 +1,4 @@
 *.min.css
 *.min.js
+.githubsettings
+/converted-html

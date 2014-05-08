@@ -9,7 +9,10 @@
   "domain": null,
   "followLeader": true,
   "ftpSettings": null,
-  "gitHubPages": null,
+  "gitHubPages": {
+    "guid": "82028131-A6F9-4D2F-9382-E4B746C73E2D",
+    "repoUrl": "https://github.com/mknadler/modulartone.git"
+  },
   "ignoreDir": "ignore",
   "less": null,
   "lintScripts": false,

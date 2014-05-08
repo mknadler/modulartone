@@ -649,7 +649,7 @@ body {
   height: 100%;
   margin: 0;
   font-size: 16px;
-  font-family: 'quicksandbold'; }
+  font-family: 'effra'; }
 
 aside {
   float: left;
@@ -904,8 +904,8 @@ body.majortenth header h1, body.majoreleventh header h1, body.majortwelfth heade
     font-size: 1.125rem; } }
 @media (max-width: 500px) {
   .interval span.display-text {
-    font-size: 16px;
-    font-size: 1rem; } }
+    font-size: 14px;
+    font-size: 0.875rem; } }
 
 .interval:after {
   margin-left: 6px;
@@ -971,7 +971,7 @@ section:not(.new) {
   float: left;
   position: relative;
   transition: width 1s ease-in-out;
-  font-family: "proxima-nova-soft", Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: "effra", Geneva, Tahoma, Verdana, sans-serif;
   text-align: center; }
   section:not(.new):before {
     content: '';
@@ -996,6 +996,12 @@ span#vertical-description {
 
   span#vertical-description {
     display: inline; } }
+#mobilewarning {
+  display: none; }
+  @media (max-width: 750px) {
+    #mobilewarning {
+      display: inline; } }
+
 section a {
   text-decoration: none;
   color: #727272;
@@ -1030,6 +1036,12 @@ section.new {
     margin-bottom: 2.25rem;
     padding: 0px 36px;
     padding: 0rem 2.25rem; }
+    @media (max-width: 500px) {
+      section.new p {
+        font-size: 16px;
+        font-size: 1rem;
+        padding: 0px 8px;
+        padding: 0rem 0.5rem; } }
 
 /* have the numbers of the ratios at the
 bottom, one on each side

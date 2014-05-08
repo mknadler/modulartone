@@ -144,7 +144,7 @@ body.majortenth, body.majoreleventh, body.majortwelfth, body.doubleoctave {
 		@include rem(18);
 	}
 	@include vertical-small {
-		@include rem(16);
+		@include rem(14);
 	}
 }
 .interval:after{
