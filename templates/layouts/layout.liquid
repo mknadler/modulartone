@@ -12,6 +12,11 @@
         <!-- Title block allowing child pages to override -->
         <title>{% block title %}Modular Tone{% endblock %}</title>
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <meta property="og:title" content="Modular Tone">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://modulartone.com">
+        <meta property="og:image" content="http://modulartone.com/assets/img/logo-png.png">
+        <meta property="og:description" content="Listening to modular scales; seeing modular tones.">
         <!-- Styles -->
         {{ "master.css" | asset_url | stylesheet_tag }}
         <!-- Style block allowing child pages to inject their own styles -->

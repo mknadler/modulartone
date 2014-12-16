@@ -65,13 +65,18 @@ define(["scales.min"], function(Scales) {
             this.change_callback = callback;
         },
         _setupOscillators: function() {
-            this.audio_context = new window.webkitAudioContext();
-            this.gain_node = this.audio_context.createGainNode();
-
+            //this.audio_context = new window.webkitAudioContext();
+            console.log(1);
+            window.AudioContext = window.AudioContext || window.webkitAudioContext;
+            console.log(2);
+            this.audio_context = new window.AudioContext();
+                        console.log(3);
+            this.gain_node = this.audio_context.createGain();
             this.gain_node.gain.value = 0.0;
-
+                        console.log(4);
             this.base_oscillator = this.audio_context.createOscillator();
             this.base_oscillator.type = 3;
+                        console.log(5);
             this.base_oscillator.frequency.value = this.base_frequency;
             this.base_oscillator.connect(this.gain_node);
 
@@ -79,19 +84,19 @@ define(["scales.min"], function(Scales) {
             this.interval_oscillator.type = 3;
             this.interval_oscillator.frequency.value = this.interval_frequency;
             this.interval_oscillator.connect(this.gain_node);
-
+console.log(4);
             this.gain_node.connect(this.audio_context.destination);
 
-            this.base_oscillator.noteOn(0);
-            this.interval_oscillator.noteOn(0);
+            this.base_oscillator.start(0);
+            this.interval_oscillator.start(0);
         },
         _changeOscillatorFrequency: function() {
             this.base_oscillator.frequency.value = this.base_frequency;
             this.interval_oscillator.frequency.value = this.interval_frequency;
         },
         _cleanupOscillators: function() {
-            this.base_oscillator.noteOff(0);
-            this.interval_oscillator.noteOff(0);
+            this.base_oscillator.stop(0);
+            this.interval_oscillator.stop(0);
 
             this.base_oscillator.disconnect();
             this.interval_oscillator.disconnect();

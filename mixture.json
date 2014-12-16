@@ -1,26 +1,28 @@
 {
   "autoPrefixer": null,
-  "convertHtmlExtension": ".html",
-  "convertHtmlOutput": null,
+  "convertHtml": {
+    "extension": ".html",
+    "relativePaths": false
+  },
   "customRuby": false,
   "customRubyPath": null,
   "customTodos": null,
-  "debug": false,
+  "debug": true,
   "domain": null,
   "followLeader": true,
   "ftpSettings": null,
-  "gitHubPages": {
-    "guid": "82028131-A6F9-4D2F-9382-E4B746C73E2D",
-    "repoUrl": "https://github.com/mknadler/modulartone.git"
-  },
-  "ignoreDir": "ignore",
+  "ignoreDir": [
+    "ignore"
+  ],
   "less": null,
   "lintScripts": false,
   "modelSource": null,
   "optimiseImages": true,
   "optimiseSVG": true,
   "password": null,
-  "preprocessorLocations": "assets",
+  "preprocessorLocations": [
+    "assets"
+  ],
   "preprocessorScriptOutput": "assets/js",
   "preprocessorStyleOutput": "assets/stylesheets/css",
   "projectDescription": "Modular Tones",

@@ -99,16 +99,16 @@ table {
 [data-interval-class="minorsecond"] {
   background-color: white;
   color: black;
-  color: #888888; }
+  color: #888; }
   [data-interval-class="minorsecond"]:active {
     background-color: #e6e6e6; }
   [data-interval-class="minorsecond"] .icon {
-    color: #888888; }
+    color: #888; }
   [data-interval-class="minorsecond"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: white;
-    background-color: #888888;
+    background-color: #888;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="minorsecond"] .icon.icon-stop {
@@ -132,16 +132,16 @@ table {
 [data-interval-class="majorsecond"] {
   background-color: #f2f2f2;
   color: #0d0d0d;
-  color: #888888; }
+  color: #888; }
   [data-interval-class="majorsecond"]:active {
     background-color: #d8d8d8; }
   [data-interval-class="majorsecond"] .icon {
-    color: #888888; }
+    color: #888; }
   [data-interval-class="majorsecond"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #f2f2f2;
-    background-color: #888888;
+    background-color: #888;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="majorsecond"] .icon.icon-stop {
@@ -165,16 +165,16 @@ table {
 [data-interval-class="minorthird"] {
   background-color: #e3e3e3;
   color: #1c1c1c;
-  color: #888888; }
+  color: #888; }
   [data-interval-class="minorthird"]:active {
     background-color: #c9c9c9; }
   [data-interval-class="minorthird"] .icon {
-    color: #888888; }
+    color: #888; }
   [data-interval-class="minorthird"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #e3e3e3;
-    background-color: #888888;
+    background-color: #888;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="minorthird"] .icon.icon-stop {
@@ -198,16 +198,16 @@ table {
 [data-interval-class="majorthird"] {
   background-color: #dadada;
   color: #252525;
-  color: #888888; }
+  color: #888; }
   [data-interval-class="majorthird"]:active {
     background-color: silver; }
   [data-interval-class="majorthird"] .icon {
-    color: #888888; }
+    color: #888; }
   [data-interval-class="majorthird"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #dadada;
-    background-color: #888888;
+    background-color: #888;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="majorthird"] .icon.icon-stop {
@@ -231,16 +231,16 @@ table {
 [data-interval-class="perfectfourth"] {
   background-color: #cdcdcd;
   color: #323232;
-  color: #888888; }
+  color: #888; }
   [data-interval-class="perfectfourth"]:active {
     background-color: #b3b3b3; }
   [data-interval-class="perfectfourth"] .icon {
-    color: #888888; }
+    color: #888; }
   [data-interval-class="perfectfourth"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #cdcdcd;
-    background-color: #888888;
+    background-color: #888;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="perfectfourth"] .icon.icon-stop {
@@ -264,16 +264,16 @@ table {
 [data-interval-class="augfourthdimfifth"] {
   background-color: silver;
   color: #3f3f3f;
-  color: #666666; }
+  color: #666; }
   [data-interval-class="augfourthdimfifth"]:active {
     background-color: #a7a7a7; }
   [data-interval-class="augfourthdimfifth"] .icon {
-    color: #666666; }
+    color: #666; }
   [data-interval-class="augfourthdimfifth"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: silver;
-    background-color: #666666;
+    background-color: #666;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="augfourthdimfifth"] .icon.icon-stop {
@@ -297,16 +297,16 @@ table {
 [data-interval-class="perfectfifth"] {
   background-color: #b5b5b5;
   color: #4a4a4a;
-  color: #666666; }
+  color: #666; }
   [data-interval-class="perfectfifth"]:active {
     background-color: #9c9c9c; }
   [data-interval-class="perfectfifth"] .icon {
-    color: #666666; }
+    color: #666; }
   [data-interval-class="perfectfifth"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #b5b5b5;
-    background-color: #666666;
+    background-color: #666;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="perfectfifth"] .icon.icon-stop {
@@ -429,16 +429,16 @@ table {
 [data-interval-class="minorseventh"] {
   background-color: #999999;
   color: #5c5c5c;
-  color: #333333; }
+  color: #333; }
   [data-interval-class="minorseventh"]:active {
     background-color: gray; }
   [data-interval-class="minorseventh"] .icon {
-    color: #333333; }
+    color: #333; }
   [data-interval-class="minorseventh"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #999999;
-    background-color: #333333;
+    background-color: #333;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="minorseventh"] .icon.icon-stop {
@@ -462,16 +462,16 @@ table {
 [data-interval-class="majorseventh"] {
   background-color: #919191;
   color: #5c5c5c;
-  color: #333333; }
+  color: #333; }
   [data-interval-class="majorseventh"]:active {
     background-color: #787878; }
   [data-interval-class="majorseventh"] .icon {
-    color: #333333; }
+    color: #333; }
   [data-interval-class="majorseventh"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #919191;
-    background-color: #333333;
+    background-color: #333;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="majorseventh"] .icon.icon-stop {
@@ -495,16 +495,16 @@ table {
 [data-interval-class="octave"] {
   background-color: #888888;
   color: #5c5c5c;
-  color: #333333; }
+  color: #333; }
   [data-interval-class="octave"]:active {
     background-color: #6f6f6f; }
   [data-interval-class="octave"] .icon {
-    color: #333333; }
+    color: #333; }
   [data-interval-class="octave"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #888888;
-    background-color: #333333;
+    background-color: #333;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="octave"] .icon.icon-stop {
@@ -528,16 +528,16 @@ table {
 [data-interval-class="majortenth"] {
   background-color: #6d6d6d;
   color: #a4a4a4;
-  color: #cccccc; }
+  color: #CCC; }
   [data-interval-class="majortenth"]:active {
     background-color: #535353; }
   [data-interval-class="majortenth"] .icon {
-    color: #cccccc; }
+    color: #CCC; }
   [data-interval-class="majortenth"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #6d6d6d;
-    background-color: #cccccc;
+    background-color: #CCC;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="majortenth"] .icon.icon-stop {
@@ -561,16 +561,16 @@ table {
 [data-interval-class="majoreleventh"] {
   background-color: #666666;
   color: #a4a4a4;
-  color: #cccccc; }
+  color: #CCC; }
   [data-interval-class="majoreleventh"]:active {
     background-color: #4d4d4d; }
   [data-interval-class="majoreleventh"] .icon {
-    color: #cccccc; }
+    color: #CCC; }
   [data-interval-class="majoreleventh"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #666666;
-    background-color: #cccccc;
+    background-color: #CCC;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="majoreleventh"] .icon.icon-stop {
@@ -594,16 +594,16 @@ table {
 [data-interval-class="majortwelfth"] {
   background-color: #5b5b5b;
   color: #a4a4a4;
-  color: #cccccc; }
+  color: #CCC; }
   [data-interval-class="majortwelfth"]:active {
     background-color: #414141; }
   [data-interval-class="majortwelfth"] .icon {
-    color: #cccccc; }
+    color: #CCC; }
   [data-interval-class="majortwelfth"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #5b5b5b;
-    background-color: #cccccc;
+    background-color: #CCC;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="majortwelfth"] .icon.icon-stop {
@@ -627,16 +627,16 @@ table {
 [data-interval-class="doubleoctave"] {
   background-color: #444444;
   color: #bbbbbb;
-  color: #cccccc; }
+  color: #CCC; }
   [data-interval-class="doubleoctave"]:active {
     background-color: #2b2b2b; }
   [data-interval-class="doubleoctave"] .icon {
-    color: #cccccc; }
+    color: #CCC; }
   [data-interval-class="doubleoctave"] .icon.icon-stop {
     padding: 3px;
     border-radius: 18px;
     color: #444444;
-    background-color: #cccccc;
+    background-color: #CCC;
     right: 14.5%; }
     @media (max-width: 1000px) {
       [data-interval-class="doubleoctave"] .icon.icon-stop {
