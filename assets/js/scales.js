@@ -1,11 +1,11 @@
-define(function() {
+ define(function() {
     return {
         minorsecond: "15:16",
         majorsecond: "8:9",
         minorthird: "5:6",
         majorthird: "4:5",
         perfectfourth: "3:4",
-        augfourthdimfifth: "1:√2",
+        augfourthdimfifth: "18:25",
         perfectfifth: "2:3",
         minorsixth: "5:8",
         goldensection: "1:1.618",
