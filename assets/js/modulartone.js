@@ -10,6 +10,45 @@ define(["sound.min"], function(Sound) {
         this.interval_change_queue = [];
 
         $("aside a.interval").on("click", $.proxy(this.onClickInterval, this));
+        $(window).keypress(function(pressed){
+            // This is messy; will refactor shortly; wanted to make sure it worked first.
+            switch(pressed.which){
+                case 49 : $('.interval:nth-child(2)').click();
+                          break;
+                case 50 : $('.interval:nth-child(3)').click();
+                          break;
+                case 51 : $('.interval:nth-child(4)').click();
+                          break;
+                case 52 : $('.interval:nth-child(5)').click();
+                          break;
+                case 53 : $('.interval:nth-child(6)').click();
+                          break;
+                case 54 : $('.interval:nth-child(7)').click();
+                          break;
+                case 55 : $('.interval:nth-child(8)').click();
+                          break;
+                case 56 : $('.interval:nth-child(9)').click();
+                          break;
+                case 57 : $('.interval:nth-child(10)').click();
+                          break;       
+                case 113 : $('.interval:nth-child(11)').click();
+                          break;
+                case 119 : $('.interval:nth-child(12)').click();
+                          break;
+                case 101 : $('.interval:nth-child(13)').click();
+                          break;
+                case 114 : $('.interval:nth-child(14)').click();
+                          break;
+                case 116 : $('.interval:nth-child(15)').click();
+                          break;
+                case 121 : $('.interval:nth-child(16)').click();
+                          break;
+                case 117 : $('.interval:nth-child(17)').click();
+                          break;
+                case 105 : $('.interval:nth-child(18)').click();
+                          break;                       
+            }
+        });
     };
 
     ModularTone.prototype = {
